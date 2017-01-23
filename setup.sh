@@ -10,7 +10,7 @@ cd
 mkdir ~/Software
 mkdir ~/QIIME_Workspace
 
-wget -O ~/.qiime_config gabedev.com/3004/qiime_config
+wget -O ~/.qiime_config https://raw.githubusercontent.com/danknights/mice5992-2017/master/.qiime_config
 wget -O ~/Software/make_MSI_cluster_jobs_itasca.py gabedev.com/3004/make_MSI_cluster_jobs_itasca.py
 wget -O ~/Software/start_parallel_jobs_torque_MSI.py gabedev.com/3004/start_parallel_jobs_torque_MSI.py
 
