@@ -2,11 +2,11 @@
 
 To set up your MSI account for using QIIME, please follow these steps:
 
-1. Get your login info for MSI
+### Get your login info for MSI
 
   * Click on this link: https://www.msi.umn.edu/user-agreement. After you agree to the user agreement you will get your login information. 
 
-2. Connect to MSI with SSH!
+### Connect to MSI with SSH!
 
 **Windows users**
 
@@ -29,7 +29,8 @@ ssh yourusername@login.msi.umn.edu
   * Enter your password
   * You should now be connected.
 
-3. Copy this command, paste it into your terminal, and press "return"
+### Run the setup command
+Copy this command, paste it into your terminal, and press "return"
 
 wget -O setup.sh z.umn.edu/5992setup && chmod +x setup.sh && ./setup.sh
 
