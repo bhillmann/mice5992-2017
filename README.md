@@ -34,5 +34,9 @@ Copy this command, paste it into your terminal, and press "return"
 
 wget -O setup.sh z.umn.edu/5992setup && chmod +x setup.sh && ./setup.sh
 
-You are now ready to use MSI and QIIME.
+### Run a test script
+Run the following command on the MSI terminal:
+`print_qiime_config.py`
+
+This should print out some details about your QIIME configuration and should not return any errors. If so, you are now ready to use MSI and QIIME.
 
