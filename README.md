@@ -25,8 +25,10 @@ https://the.earth.li/~sgtatham/putty/latest/x86/putty-0.67-installer.msi
 
   * Open the "Terminal" application. On a Mac you can click the search button (magnifying glass) and type "Terminal" to find the application.
   * Enter this command into the terminal, using your username in place of `yourusername`:
-ssh yourusername@login.msi.umn.edu
-  * Enter your password
+
+`ssh yourusername@login.msi.umn.edu`
+ 
+ * Enter your password
   * You should now be connected.
 
 ### Run the setup command
