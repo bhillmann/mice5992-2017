@@ -19,7 +19,7 @@ https://the.earth.li/~sgtatham/putty/latest/x86/putty-0.67-installer.msi
   * Click "Open"
   * Enter your MSI username and password
   * You should now be connected.
-  * Visual instructions can be found here: http://www.fastcomet.com/tutorials/getting-started/putty#connect
+  * Visual instructions can be found here: http://www.fastcomet.com/tutorials/getting-started/putty#connect and here: http://gabedev.com/3004/software_guide/ (Step 3)
 
 **Mac/Linux users**
 
@@ -40,3 +40,18 @@ Run the following command on the MSI terminal:
 
 This should print out some details about your QIIME configuration and should not return any errors. If so, you are now ready to use MSI and QIIME.
 
+### Install Filezilla to transfer files to/from MSI
+Download and install Filezilla from here: https://filezilla-project.org/download.php?type=client
+
+Instructions for connecting to MSI can be found here (Step 4): http://gabedev.com/3004/software_guide/
+
+Thanks to Gabe Al-Ghalith for these instructions!
+
+### Get a VPN working
+MSI won't let you connect directly unless you are on campus. To access your files from home, you will need to set up a VPN (Virtual Private Network). 
+
+Windows users see step 7 in Gabe's instructions here: http://gabedev.com/3004/software_guide/
+
+Mac users try the "Native Client for MAC using IPSec" instructions here: https://it.umn.edu/downloads-guides-install-ipsec-native
+
+If those don't work, see more options here: https://it.umn.edu/downloads-guides
