@@ -37,7 +37,7 @@ Copy this command, paste it into your terminal, and press "return"
 `wget -O setup.sh z.umn.edu/5992setup && chmod +x setup.sh && ./setup.sh`
 
 ### Run a test script
-Run the following command on the MSI terminal:
+Run the following commands on the MSI terminal:
 
 `isub`
 
