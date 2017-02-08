@@ -116,3 +116,23 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
 7. Move the files back from MSI to your computer using Filezilla
  See instructions on [Getting Started Guide](../../README.md).
 
+8. Now do it your self on other data
+ There are dozens of studies with sequence files and mapping files in this directory:
+ ```bash
+    ls /home/knightsd/public/qiime_db/processed/
+    ls /home/knightsd/public/qiime_db/processed/Bushman_enterotypes_cafe_study_1010_ref_13_8
+ ```
+
+ First make a new directory to work in and move into it:
+ ```bash
+    mkdir bonus
+    cd bonus
+ ```
+ 
+  Now run OTU picking, Beta diversity, Principal Coordinates Analysis, and making the 3D plots on the "Bushman...cafe" study:
+ ```bash
+    python /home/mice5992/shared/NINJA-OPS-1.5.1/bin/ninja.py -i /home/knightsd/public/qiime_db/processed/Bushman_enterotypes_cafe_study_1010_ref_13_8/Bushman_enterotypes_cafe_study_1010_split_library_seqs.fna -o otus -p 4
+    
+    etc.
+ ```
+ 
