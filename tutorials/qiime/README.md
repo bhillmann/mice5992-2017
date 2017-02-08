@@ -84,7 +84,7 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
 3. Compare all sequences to a reference database using NINJA-OPS.
 
  ```bash
-    time python /home/mice5992/shared/NINJA-OPS-1.5.1/bin/ninja.py -i ../../data/globalgut/seqs.fna -o otus
+    time python /home/mice5992/shared/NINJA-OPS-1.5.1/bin/ninja.py -i ../../data/globalgut/seqs.fna -o otus -p 4
     ls otus
  ```
 
