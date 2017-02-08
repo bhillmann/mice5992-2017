@@ -81,12 +81,23 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
     cd qiime
  ```
  
-3. Compare all sequences to a reference database using NINJA-OPS.
+3. Pick Operational Taxonomic Units (OTUs)
+ Find the closest match for each sequence in a reference database using NINJA-OPS.
 
  ```bash
     time python /home/mice5992/shared/NINJA-OPS-1.5.1/bin/ninja.py -i ../../data/globalgut/seqs.fna -o otus -p 4
     ls otus
  ```
+ 
+ Get a nice summary of the OTU table, and inspect it using `less`. You can quit `less` by typing the letter `q`.:
+ ```bash
+    biom summarize_table -i otus/ninja_otutable.biom -o otus/stats.txt
+    less otus/stats.txt
+ ```
+ 
+4. Run all standard QIIME analyses.
 
-
+ ```bash
+    time core_diversity_analyses.py -i otus/ninja_otutable.biom -m ../../data/globalgut/map.txt -o corediv -e 500 -c 'AGE,COUNTRY,SEX' -t /home/mice5992/shared/97_otus.tree
+ ```
 
