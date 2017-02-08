@@ -23,6 +23,7 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
  Load all of the software "modules" that you will need.
  ```bash
     module load qiime/1.9.1
+    module load bowtie2
  ```
  
 3. Get the data
