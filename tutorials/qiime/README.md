@@ -6,7 +6,7 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
 
 ### Setup
 1. Connect to MSI
- Follow the steps in the [Getting Started page](../README.md) to connect to MSI using SSH.
+ Follow the steps in the [Getting Started Guide](../../README.md) to connect to MSI using SSH.
 
  When you first log in, you will be on the "login" node. You are not allowed to run computations on this node. Instead, you can get to an interactive node for running computations with this command:
  ```bash
@@ -114,5 +114,5 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
  ```
 
 7. Move the files back from MSI to your computer using Filezilla
- (See instructions on [Getting Started Guide](../README.md)
+ See instructions on [Getting Started Guide](../../README.md).
 
