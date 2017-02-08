@@ -19,7 +19,7 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
     pwd
  ```
  The current directory should be /home/mice5992/yourusername.
-2. Load all of the software "modules" that you will need
+2. Load all of the software "modules" that you will need  
  ```bash
     module load qiime/1.9.0
     module load 
