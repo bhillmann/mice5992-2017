@@ -110,7 +110,7 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
 6. Make the 3D interactive "Emperor" plot.
 
  ```bash
-    time make_emperor.py -i beta/unweighted_unifrac_ninja_otutable_pc.txt -m map.txt -o 3dplots
+    time make_emperor.py -i beta/unweighted_unifrac_ninja_otutable_pc.txt -m ../../data/globalgut/map.txt -o 3dplots
  ```
 
 7. Move the files back from MSI to your computer using Filezilla
