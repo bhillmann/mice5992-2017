@@ -95,9 +95,24 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
     less otus/stats.txt
  ```
  
-4. Run all standard QIIME analyses.
+4. Calculate beta diversity.
 
  ```bash
-    time core_diversity_analyses.py -i otus/ninja_otutable.biom -m ../../data/globalgut/map.txt -o corediv -e 500 -c 'AGE,COUNTRY,SEX' -t /home/mice5992/shared/97_otus.tree
+    beta_diversity.py -i otus/ninja_otutable.biom -o beta -m "unweighted_unifrac,weighted_unifrac,bray_curtis" -t /home/mice5992/shared/97_otus.tree
  ```
+
+5. Run principal coordinates analysis on beta diversity distances to collapse to 3 dimensions.
+
+ ```bash
+    principal_coordinates.py -i beta/unweighted_unifrac_ninja_otutable.txt -o beta/unweighted_unifrac_ninja_otutable_pc.txt
+ ```
+
+6. Make the 3D interactive "Emperor" plot.
+
+ ```bash
+    time make_emperor.py -i beta/unweighted_unifrac_ninja_otutable_pc.txt -m map.txt -o 3dplots
+ ```
+
+7. Move the files back from MSI to your computer using Filezilla
+ (See instructions on [Getting Started Guide](../README.md)
 
