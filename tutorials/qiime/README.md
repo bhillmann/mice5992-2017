@@ -19,11 +19,13 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
     pwd
  ```
  The current directory should be /home/mice5992/yourusername.
-2. Load all of the software "modules" that you will need  
+2. Load software
+ Load all of the software "modules" that you will need.
  ```bash
     module load qiime/1.9.0
     module load 
  ```
+ 
 3. Get the data
  Download the course repository to your folder on MSI:
  ```bash
@@ -38,4 +40,53 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
  ```bash
     ls
  ```
-3. Run QIIME
+
+ Move to the `data` directory:
+ ```bash
+    cd data
+ ```
+
+ Move to the `globalgut` directory:
+ ```bash
+    cd globalgut
+ ```
+
+ Unzip the sequences file; list the directory contents before and after:
+ ```bash
+    ls
+    unzip seqs.fna.zip
+    ls
+ ```
+
+ Test how large the files are:
+ ```bash
+    du -hs *
+ ```
+
+ Peek at the first 10 lines of the file:
+ ```bash
+    head seqs.fna
+ ```
+
+ Count the number of lines, words, and characters in the file. How many sequences are in the file?
+ ```bash
+    wc seqs.fna
+ ```
+
+ Move up two directories, then down to the `qiime` directory in the `tutorials` directory:
+ ```bash
+    cd ..
+    cd ..
+    cd tutorials
+    cd qiime
+ ```
+ 
+3. Compare all sequences to a reference database using NINJA-OPS.
+
+ ```bash
+    time python /home/mice5992/shared/NINJA-OPS-1.5.1/bin/ninja.py -i ../../data/globalgut/seqs.fna -o otus
+    ls otus
+ ```
+
+
+
