@@ -125,7 +125,7 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
  ![Filezilla example](https://raw.githubusercontent.com/danknights/mice5992-2017/master/supporting_files/qiime_tutorial_FTP_screenshot.png "Filezilla example")
 
 
-8. Now do it your self on other data  
+8. Now do it yourself on other data  
  There are dozens of studies with sequence files and mapping files in this directory:
  ```bash
     ls /home/knightsd/public/qiime_db/processed/
