@@ -122,7 +122,7 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
 7. Move the files back from MSI to your computer using Filezilla  
  See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/yourusername/mice5992-2017/tutorials/qiime/`. Then drag the `otus`, `beta`, and `3dplots` folders over to your laptop.
  
- ![Filezilla example](https://github.com/danknights/mice5992-2017/supporting_files/qiime_tutorial_FTP_screenshot.png "Filezilla example")
+ ![Filezilla example](https://raw.githubusercontent.com/danknights/mice5992-2017/master/supporting_files/qiime_tutorial_FTP_screenshot.png "Filezilla example")
 
 
 8. Now do it your self on other data  
