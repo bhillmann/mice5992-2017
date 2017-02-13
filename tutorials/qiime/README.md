@@ -85,7 +85,7 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
  Find the closest match for each sequence in a reference database using NINJA-OPS.
 
  ```bash
-    time python /home/mice5992/shared/NINJA-OPS-1.5.1/bin/ninja.py -i ../../data/globalgut/seqs.fna -o otus -p 4
+    time python /home/mice5992/shared/NINJA-OPS-1.5.1/bin/ninja.py -i ../../data/globalgut/seqs.fna -o otus -p 4 -z
     ls otus
  ```
  
