@@ -89,10 +89,10 @@ to the QIIME tool to allow you to try running a few commands and viewing the out
     ls otus
  ```
  
- Get a nice summary of the OTU table, and inspect it using `less`. You _must_ quit `less` by typing the letter `q` before proceeding:
+ Get a nice summary of the OTU table, and inspect the first 20 lines using `head`:
  ```bash
     biom summarize_table -i otus/ninja_otutable.biom -o otus/stats.txt
-    less otus/stats.txt
+    head -n 20 otus/stats.txt
  ```
 
  Make a text-based version of the OTU table and print out the first 10 rows (with `head`) and the first 5 columns (with `cut`):
