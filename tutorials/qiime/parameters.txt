@@ -1,0 +1,6 @@
+summarize_taxa:level 6
+plot_taxa_summary:chart_type bar
+alpha_rarefaction:num_steps 3
+alpha_rarefaction:min_rare_depth 100
+beta_diversity:metrics unweighted_unifrac
+alpha_diversity:metrics PD_whole_tree
