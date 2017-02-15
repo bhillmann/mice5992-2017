@@ -36,6 +36,12 @@ Copy this command, paste it into your terminal, and press "return"
 
 `wget -O setup.sh z.umn.edu/5992setup && chmod +x setup.sh && ./setup.sh`
 
+ Run this additional command:
+
+ ```bash
+    mkdir ~/.config; mkdir ~/.config/matplotlib; echo "backend: agg" >> ~/.config/matplotlib/matplotlibrc
+ ```
+
 ### Run a test script
 Run the following commands on the MSI terminal:
 
