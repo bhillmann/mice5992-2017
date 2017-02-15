@@ -56,8 +56,12 @@ We will use a QIIME parameters file to tweak the settings.
  ```bash
     ls
  ```
- You should see a file `parameters.txt`.
-
+ You should see a file `parameters.txt`. Print the contents of this file to the screen with `cat`:
+ 
+ ```bash
+    cat parameters.txt
+ ```
+ 
 4. Pick Operational Taxonomic Units (OTUs) again
  Find the closest match for each sequence in a reference database using NINJA-OPS.
 
@@ -89,9 +93,19 @@ We will use a QIIME parameters file to tweak the settings.
  However, you will need to quit `less` by typing `q` before you do anything else.
  
 5. Make taxonomy stacked bar plots
+ First read the usage instructions for the `summarize_taxa_through_plots.py` command with `-h`:
+ ```bash
+    summarize_taxa_through_plots.py -h
+ ```
+ 
+ What does this command do?
+ 
+ Compare the default settings with the tweaked settings in `parameters.txt`. What are we changing by using `parameters.txt`?
+ 
+ Now run the command `summarize_taxa_through_plots.py`:
 
  ```bash
-    summarize_taxa_through_plots.py -i otus/ninja_otutable_s10_min500.biom -p parameters.txt -w -o taxaplots/
+    summarize_taxa_through_plots.py -i otus/ninja_otutable_s10_min500.biom -p parameters.txt -v -o taxaplots/
  ```
 
 6. Make beta diversity plots
@@ -99,6 +113,7 @@ We will use a QIIME parameters file to tweak the settings.
  ```bash
     beta_diversity_through_plots.py -i otus/ninja_otutable_s10_min500.biom -m ../../data/globalgut/map.txt -o betaplots -p parameters.txt -t /home/mice5992/shared/97_otus.tree -v
  ```
+ 
 7.  Run alpha diversity analysis and make plots of rarefaction curves.
 
  ```bash
@@ -106,7 +121,7 @@ We will use a QIIME parameters file to tweak the settings.
  ```
 
 8. Move the files back from MSI to your computer using Filezilla  
- See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/yourusername/mice5992-2017/tutorials/qiime/`. Drag the `betaplots`, `taxaplots`, and `alphaplots` folders to your computer.
+ See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/<yourusername>/mice5992-2017/tutorials/corediv/`. Drag the `betaplots`, `taxaplots`, and `alphaplots` folders to your computer.
  
 9. Repeat using other data  
  Choose one of the many studies with sequence files and mapping files in this directory:
@@ -114,12 +129,10 @@ We will use a QIIME parameters file to tweak the settings.
     ls /home/knightsd/public/qiime_db/processed/
     ls /home/knightsd/public/qiime_db/processed/Bushman_enterotypes_cafe_study_1010_ref_13_8
  ```
+ **Note:** If you choose a very large data set you will run out of memory or time. You may need to log out of the interactive node with "control-D" and rerun `isub` requesting more RAM and/or more time:
 
- Before running all of these analyses, use Filezilla/FTP to move the mapping file over to your computer, and view this using Excel (or Google Sheets). 
- Can you find a category that is interesting to run comparisons against? Use this information when running core diversity analyses on that file.
  ```bash
-    mkdir bonus
-    cd bonus
+    isub -n nodes=1:ppn=4 -m 16GB -w 08:00:00
  ```
 
  Then on MSI make a new directory to work in and move into it:
@@ -135,3 +148,4 @@ We will use a QIIME parameters file to tweak the settings.
     etc.
  ```
 
+ After you finish running all core diversity analyses on the other data set, use Filezilla/FTP to move the outputs over to your computer. Also move the mapping file for that data set over to your computer, and open with Excel (or Google Sheets). Can you find a category that is interesting to run comparisons against? Use this information when examining the core diversity analyses on that study.
