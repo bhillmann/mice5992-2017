@@ -85,7 +85,7 @@ We will use a QIIME parameters file to tweak the settings.
 5. Run alpha diversity analysis and make plots of rarefaction curves.
 
  ```bash
-    alpha_rarefaction.py -i otus/ninja_otutable_s10.biom --min_rare_depth 100 --max_rare_depth 500 --num_steps 3 -o alpha_rare -m ../../data/globalgut/map.txt -v -p parameters.txt -t /home/mice5992/shared/97_otus.tree
+    alpha_rarefaction.py -i otus/ninja_otutable_s10.biom --min_rare_depth 100 --max_rare_depth 500 --num_steps 3 -o alphaplots -m ../../data/globalgut/map.txt -v -p parameters.txt -t /home/mice5992/shared/97_otus.tree
  ```
 
 6. Make taxonomy stacked bar plots
@@ -94,17 +94,14 @@ We will use a QIIME parameters file to tweak the settings.
     summarize_taxa_through_plots.py -i otus/ninja_otutable_s10.biom -p parameters.txt -w -o taxaplots/
  ```
 
-7. Run all other core QIIME diversity analyses, suppressing the alpha diversity and taxonomy plots.
- Note: we could run all of the analyses here, but it would take a long time. We ran the `alpha_rarefaction.py` 
- and `summarize_taxa_through_plots.py` separately because QIIME's `core_diversity_analyses.py` script does not properly use the 
- parameters file for running these. By running them separately we are able to tweak the settings and make them run faster.
+7. Make beta diversity plots
 
  ```bash
-    time core_diversity_analyses.py -i otus/ninja_otutable_s10.biom -m ../../data/globalgut/map.txt -c "AGE_GROUP,COUNTRY" -o corediv -e 500 --tree_fp /home/mice5992/shared/97_otus.tree --suppress_alpha_diversity --suppress_taxa_summary -v
+    beta_diversity_through_plots.py -i otus/ninja_otutable_s10.biom -m ../../data/globalgut/map.txt -o betaplots -p parameters.txt -t /home/mice5992/shared/97_otus.tree -v
  ```
 
 8. Move the files back from MSI to your computer using Filezilla  
- See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/yourusername/mice5992-2017/tutorials/qiime/`. Drag the `corediv`, `taxaplots`, and `alpha_rare` folders to your computer.
+ See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/yourusername/mice5992-2017/tutorials/qiime/`. Drag the `betaplots`, `taxaplots`, and `alphaplots` folders to your computer.
  
 9. Repeat using other data  
  Choose one of the many studies with sequence files and mapping files in this directory:
