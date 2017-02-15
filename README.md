@@ -1,4 +1,4 @@
-# mice5992-2017
+# MiCE 5992 Getting Started Guide
 
 To set up your MSI account for using QIIME, please follow these steps:
 
