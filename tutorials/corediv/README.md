@@ -82,22 +82,21 @@ We will use a QIIME parameters file to tweak the settings.
  To view more of this file, you can scroll up and down inside it with `less otus/stats.txt`.
  However, you will need to quit `less` by typing `q` before you do anything else.
  
-5. Run alpha diversity analysis and make plots of rarefaction curves.
-
- ```bash
-    alpha_rarefaction.py -i otus/ninja_otutable_s10.biom --min_rare_depth 100 --max_rare_depth 500 --num_steps 3 -o alphaplots -m ../../data/globalgut/map.txt -v -p parameters.txt -t /home/mice5992/shared/97_otus.tree
- ```
-
-6. Make taxonomy stacked bar plots
+5. Make taxonomy stacked bar plots
 
  ```bash
     summarize_taxa_through_plots.py -i otus/ninja_otutable_s10.biom -p parameters.txt -w -o taxaplots/
  ```
 
-7. Make beta diversity plots
+6. Make beta diversity plots
 
  ```bash
     beta_diversity_through_plots.py -i otus/ninja_otutable_s10.biom -m ../../data/globalgut/map.txt -o betaplots -p parameters.txt -t /home/mice5992/shared/97_otus.tree -v
+ ```
+7.  Run alpha diversity analysis and make plots of rarefaction curves.
+
+ ```bash
+    alpha_rarefaction.py -i otus/ninja_otutable_s10.biom --min_rare_depth 100 --max_rare_depth 500 --num_steps 3 -o alphaplots -m ../../data/globalgut/map.txt -v -p parameters.txt -t /home/mice5992/shared/97_otus.tree
  ```
 
 8. Move the files back from MSI to your computer using Filezilla  
@@ -130,4 +129,3 @@ We will use a QIIME parameters file to tweak the settings.
     etc.
  ```
 
-10. 
