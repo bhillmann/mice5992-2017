@@ -30,7 +30,7 @@ We will use a QIIME parameters file to tweak the settings.
     /home/mice5992/<yourusername>
  ```
 
- List the contents of your home directory:
+ List the contents of your home directory, if you are curious what's in there:
  ```bash
     ls
  ```
@@ -78,6 +78,12 @@ We will use a QIIME parameters file to tweak the settings.
   - How many samples?
   - How many total sequences matched the database overall?
   - How many sequences matched the database in the lowest coverage sample?
+
+5. Drop rare OTUs, drop samples with < 500 sequences
+ ```bash
+    filter_otus_from_otu_table.py -i otus/ninja_otutable.biom -o otus/ninja_otutable_s10.biom -s 10
+    filter_samples_from_otu_table.py -n 500 -i otus/ninja_otutable_s10.biom -o otus/ninja_otutable_s10_min500.biom
+ ```
 
  To view more of this file, you can scroll up and down inside it with `less otus/stats.txt`.
  However, you will need to quit `less` by typing `q` before you do anything else.
