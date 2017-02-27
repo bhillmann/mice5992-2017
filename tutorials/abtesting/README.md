@@ -70,6 +70,8 @@ Then change directories into the course repository folder that you downloaded:
  
  
 ### Background
+This tutorial folder already contains the folders `alphaplots`, `betaplots`, `taxaplots` that come from the [Core diversity tutorial](../corediv).
+
 There are three types of statistical testing that we will be doing in QIIME: taxonomic profiles, beta diversity, and alpha diversity.
 
 #### Taxonomic profile significance.
