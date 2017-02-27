@@ -61,7 +61,8 @@ We will use a QIIME parameters file to tweak the settings.
  ```bash
     cat parameters.txt
  ```
- 
+
+### Analysis
 4. Pick Operational Taxonomic Units (OTUs) again
  Find the closest match for each sequence in a reference database using NINJA-OPS.
 
@@ -83,15 +84,15 @@ We will use a QIIME parameters file to tweak the settings.
   - How many total sequences matched the database overall?
   - How many sequences matched the database in the lowest coverage sample?
 
+ To view more of this file, you can scroll up and down inside it with `less otus/stats.txt`.
+ However, you will need to quit `less` by typing `q` before you do anything else.
+
 5. Drop rare OTUs, drop samples with < 500 sequences
  ```bash
     filter_otus_from_otu_table.py -i otus/ninja_otutable.biom -o otus/ninja_otutable_s10.biom -s 10
     filter_samples_from_otu_table.py -n 500 -i otus/ninja_otutable_s10.biom -o otus/ninja_otutable_s10_min500.biom
  ```
 
- To view more of this file, you can scroll up and down inside it with `less otus/stats.txt`.
- However, you will need to quit `less` by typing `q` before you do anything else.
- 
 5. Make taxonomy stacked bar plots
  First read the usage instructions for the `summarize_taxa_through_plots.py` command with `-h`:
  ```bash
