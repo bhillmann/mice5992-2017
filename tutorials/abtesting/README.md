@@ -1,18 +1,3 @@
-
-To install the needed packages in R:
-
-```
-> install.packages(c('optparse','vegan','randomForest'),repo='http://cran.wustl.edu',dep=TRUE)
-Warning in install.packages("optparse", repo = "http://cran.wustl.edu",  :
-  'lib = "/panfs/roc/msisoft/R/3.2.2/lib64/R/library"' is not writable
-Would you like to use a personal library instead?  (y/n) y
-...
-...
-...
-> q()
-```
-
-
 ## MiCE 5992 Tutorial: A/B testing with QIIME
 
 ### Background
@@ -66,8 +51,26 @@ Then change directories into the course repository folder that you downloaded:
     ls
  ```
 
+ Install some needed packages in R. You only have to do this one time. First start `R`:
+
+ ```bash
+    R
+ ```
+
+ Then run the installation command and answer `y` to any questions.
+ ```R
+    install.packages(c('optparse','vegan','randomForest'),repo='http://cran.wustl.edu',dep=TRUE)
+ ```
+
+ Quit `R` with `q()`:
+ 
+ ```R
+    q()
+ ```
+ 
+ 
 ### Background
-There are three types of statistical testing that we will be doing in QIIME:
+There are three types of statistical testing that we will be doing in QIIME: taxonomic profiles, beta diversity, and alpha diversity.
 
 #### Taxonomic profile significance.
 
@@ -123,8 +126,53 @@ There are three different types of experimental variables that matter for these 
  ```
 
 
+#### Beta diversity significance.
+
+The goal of these tests is to answer the question: Is overall microbiome variation statistically associated with a particular experimental variable?
+
+We can test the same three different types of experimental variables as follows, using the same script and method. Use QIIME script [`compare_categories.py`](http://qiime.org/scripts/compare_categories.html) with flag `-s adonis`. This uses the `adonis` test in `R` (http://cc.oulu.fi/~jarioksa/softhelp/vegan/html/adonis.html), which is a non-parametric test for different means across two groups.
+
+ Run an example:
+
+ ```bash
+    compare_categories.py -i betaplots/unweighted_unifrac_dm.txt -m ../../data/globalgut/map.txt -c COUNTRY -o beta_country_significance --method adonis
+    compare_categories.py -i betaplots/unweighted_unifrac_dm.txt -m ../../data/globalgut/map.txt -c AGE -o beta_age_significance --method adonis
+    compare_categories.py -i betaplots/unweighted_unifrac_dm.txt -m ../../data/globalgut/map.txt -c AGE_GROUP -o beta_age_group_significance --method adonis
+ ```
+ 
+ Print the significance testing results. The p-value is at the top right uner `Pr(>F)`:
+ 
+ ```bash
+    cat beta_age_group_significance/adonis_results.txt
+ ```
+ 
+ Was the result significant? What does this mean?
+ 
+
+#### Alpha diversity significance.
+
+The goal of this test is to answer the question: Is microbiome biodiversity (i.e. diversity within a sample) statistically associated with a particular experimental variable?
+
+QIIME only currently has the ability to handle discrete variable testing for alpha diversity. Use QIIME script [`compare_alpha_diversity.py`](http://qiime.org/scripts/compare_alpha_diversity.html) with flag `-t parametric`. This runs a standard [Student's t-test](https://en.wikipedia.org/wiki/Student's_t-test) for each pair of groups. Alpha diversity tends to be more normally distributed within groups than individual taxa, so a t-test is usually acceptable.
+
+ Run an example:
+
+ ```bash
+    compare_alpha_diversity.py -i alphaplots/alpha_div_collated/PD_whole_tree.txt -m ../../data/globalgut/map.txt -c COUNTRY -o alpha_country_significance -t parametric
+    compare_alpha_diversity.py -i alphaplots/alpha_div_collated/PD_whole_tree.txt -m ../../data/globalgut/map.txt -c AGE_GROUP -o alpha_age_group_significance -t parametric
+ ```
+ 
+ Print the significance testing results. The p-value is at the top right uner `Pr(>F)`:
+ 
+ ```bash
+    cat alpha_country_significance/COUNTRY_stats.txt
+ ```
+ 
+ Is the USA significantly more or less diverse than Malawi? Use the Group 1 mean, Group 2 mean, and p-value columns. Does this make sense?
+
+
 8. Move the files back from MSI to your computer using Filezilla  
- See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/<yourusername>/mice5992-2017/tutorials/corediv/`. Drag the `betaplots`, `taxaplots`, and `alphaplots` folders to your computer.
+ See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/<yourusername>/mice5992-2017/tutorials/abtesting/`. Drag the `alpha_country_significance`, `alpha_age_group_significance`, `beta_age_group_significance`, `beta_age_significance`, `beta_country_significance`, `genus_age_group_significance.txt`, `genus_age_significance.txt`,`genus_country_group_significance.txt`, files and folders to your computer. Open any text files that you want to view in Excel with right-click --> Open with --> Excel. If you don't have Excel, you can create a new Google Sheet on Google Drive, and then use File --> Import to import the text file as a spreadsheet.
  
 9. Repeat using other data  
  Choose one of the many studies with sequence files and mapping files in this directory:
@@ -144,12 +192,16 @@ There are three different types of experimental variables that matter for these 
     cd bonus
  ```
  
-  Now run OTU picking, the core diversity analyses, and the statistical testing above:
+  Now run OTU picking and the core diversity analyses:
  ```bash
     python /home/mice5992/shared/NINJA-OPS-1.5.1/bin/ninja.py -i /home/knightsd/public/qiime_db/processed/Bushman_enterotypes_cafe_study_1010_ref_13_8/Bushman_enterotypes_cafe_study_1010_split_library_seqs.fna -o otus -p 4
     
     etc.
  ```
 
- After you finish running all core diversity analyses on the other data set, use Filezilla/FTP to move the outputs over to your computer. Also move the mapping file for that data set over to your computer, and open with Excel (or Google Sheets). Can you find a category that is interesting to run comparisons against? Use this information when examining the core diversity analyses on that study.
+ **Note:** You will need to specify the full file path to whatever files you are using. These will be very long. For example, in the ninja.py command above, the full path to the sequences file is `/home/knightsd/public/qiime_db/processed/Bushman_enterotypes_cafe_study_1010_ref_13_8/Bushman_enterotypes_cafe_study_1010_split_library_seqs.fna`. The full path to the mapping file (metadata table) for that study is `/home/knightsd/public/qiime_db/processed/Bushman_enterotypes_cafe_study_1010_ref_13_8/Bushman_enterotypes_cafe_study_1010_mapping_file.txt`. These are examples of _absolute paths_ that begin with a `/` and specify the full file path starting at the very top of the file system. 
+
+ You can also use _relative paths_ when it is easier. For example, when you run the core diversity analyses you will need a parameters file for some scripts. If you are in a folder called `bonus` inside the `corediv` tutorial folder, you can pass `-p ../parameters.txt` to reach the parameters file in the directory above your current directory using a _relative path_. Alternatively, you can use an absolute path, which will look something like this: `/home/mice5992/<yourusername>/mice5992-2017/tutorials/corediv/parameters.txt`.
+
+ After you have finished running all core diversity analyses on another data set, use Filezilla/FTP to move the outputs over to your computer. Also move the mapping file for that data set over to your computer, and open with Excel (or Google Sheets as described above). Use these visualizations to find a category that is interesting to run significance test againsts. Then proceed with significance testing using taxonomic profiles, alpha diversity profiles, and beta diversity profiles as described in this tutorial.
 
