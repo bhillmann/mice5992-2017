@@ -108,11 +108,12 @@ We will use a QIIME parameters file to tweak the settings.
  ```bash
     summarize_taxa_through_plots.py -i otus/ninja_otutable_s10_min500.biom -p parameters.txt -v -o taxaplots/
  ```
+ **Note:** if you get an error from any QIIME script saying that the output directory already exists, then you can usually rerun the command with ` -f` at the end to force it to overwrite the existing directory. If that doesn't work, then remove the offending directory with `rm -rf <name of the directory>`.
 
 6. Make beta diversity plots
 
  ```bash
-    beta_diversity_through_plots.py -i otus/ninja_otutable_s10_min500.biom -m ../../data/globalgut/map.txt -o betaplots -p parameters.txt -t /home/mice5992/shared/97_otus.tree -v
+    beta_diversity_through_plots.py -i otus/ninja_otutable_s10_min500.biom -m ../../data/globalgut/map.txt -o betaplots -p parameters.txt -t /home/mice5992/shared/97_otus.tree -v 
  ```
  
 7.  Run alpha diversity analysis and make plots of rarefaction curves.
