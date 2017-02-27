@@ -1,0 +1,52 @@
+Logging started at 12:18:25 on 15 Feb 2017
+QIIME version: 1.9.1
+
+qiime_config values:
+blastmat_dir	/soft/qiime/1.8.0/blast-2.2.22-release/data
+pick_otus_reference_seqs_fp	/panfs/roc/itascasoft/qiime/1.9.1/qiime-deps/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+python_exe_fp	/soft/qiime/1.8.0/python-2.7.3-release/bin/python
+sc_queue	all.q
+pynast_template_alignment_fp	/soft/qiime/1.8.0/core_set_aligned.fasta.imputed
+cluster_jobs_fp	/home/knightsd/dknights/Software/start_parallel_jobs_torque_MSI.py
+assign_taxonomy_reference_seqs_fp	/home/mice5992/shared/97_otus.fasta
+torque_queue	lab
+template_alignment_lanemask_fp	/soft/qiime/1.8.0/lanemask_in_1s_and_0s
+jobs_to_start	6
+cloud_environment	False
+qiime_scripts_dir	/soft/qiime/1.8.0/qiime-1.8.0-release/bin
+denoiser_min_per_core	50
+working_dir	/home/knightsd/dknights/QIIME_Workspace
+assign_taxonomy_id_to_taxonomy_fp	/home/mice5992/shared/97_otu_taxonomy.txt
+temp_dir	/tmp/
+blastall_fp	/soft/qiime/1.8.0/blast-2.2.22-release/bin/blastall
+seconds_to_sleep	60
+
+parameter file values:
+alpha_diversity:metrics	PD_whole_tree
+beta_diversity:metrics	unweighted_unifrac
+summarize_taxa:level	6
+make_distance_boxplots:num_permutations	99
+plot_taxa_summary:chart_type	bar
+multiple_rarefactions:num_reps	2
+
+Input file md5 sums:
+otus/ninja_otutable_s10_min500.biom: 850e03fb33893a1a54d88acfca1925f6
+
+Executing commands.
+
+# Summarize Taxonomy command 
+summarize_taxa.py -i otus/ninja_otutable_s10_min500.biom -o taxaplots/ --level 6
+
+Stdout:
+
+Stderr:
+
+# Plot Taxonomy Summary command 
+plot_taxa_summary.py -i taxaplots/ninja_otutable_s10_min500_L6.txt -o taxaplots//taxa_summary_plots/ --chart_type bar
+
+Stdout:
+
+Stderr:
+
+
+Logging stopped at 12:22:59 on 15 Feb 2017
