@@ -40,6 +40,14 @@ Then change directories into the course repository folder that you downloaded:
     git pull
  ```
 
+ If you receive an error stating that you have local changes preventing this from working, then try running this:
+
+ ```bash
+    git fetch --all
+    git reset --hard origin/master
+ ```
+ 
+ 
  Then change directories into the new tutorial folder:
  ```bash
     cd tutorials
