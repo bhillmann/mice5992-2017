@@ -1,7 +1,7 @@
 ## MiCE 5992 Project 1
 
 ### Background
-This is a short tutorial on how to get started on your individual project. Please show all work, including all commands run, by entering them into the Word document here.
+This is a short tutorial on how to get started on your individual project. Please show all work, including all commands run, by entering them into the [Individual Project Word document](https://drive.google.com/open?id=0B_29m5gMd9XBVGJDOVdYT1htRWs).
 
 ### Setup
 1. Connect to MSI  
