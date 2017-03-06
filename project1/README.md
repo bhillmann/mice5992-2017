@@ -63,7 +63,7 @@ This is a short tutorial on how to get started on your individual project.
  **Note:** you should copy the mapping file over to your computer using FTP so that you can inspect it before proceeding.
  
 ### Bonus 
-Follow instructions in the following online [QIIME Tutorials](http://qiime.org/tutorials/index.html):
+One point each. Follow instructions in the following online [QIIME Tutorials](http://qiime.org/tutorials/index.html):
   1. [Making distance boxplots](http://qiime.org/tutorials/creating_distance_comparison_plots.html). Note: this is only for discete variables. You may want to edit the mapping file in Excel to shorten the names of the variables. Otherwise the boxplots will not be legible.
   2. [Running supervised learning](http://qiime.org/tutorials/running_supervised_learning.html).
   3. Performing [Procrustes analysis](http://qiime.org/tutorials/procrustes_analysis.html) to compare unweighted UniFrac distances to weighted UniFrac distances.
