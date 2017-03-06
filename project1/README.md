@@ -1,7 +1,7 @@
 ## MiCE 5992 Project 1
 
 ### Background
-This is a short tutorial on how to get started on your individual project.
+This is a short tutorial on how to get started on your individual project. Please show all work, including all commands run, by entering them into the Word document here.
 
 ### Setup
 1. Connect to MSI  
@@ -64,6 +64,6 @@ This is a short tutorial on how to get started on your individual project.
  
 ### Bonus 
 One point each. Follow instructions in the following online [QIIME Tutorials](http://qiime.org/tutorials/index.html):
-  1. [Making distance boxplots](http://qiime.org/tutorials/creating_distance_comparison_plots.html). Note: this is only for discete variables. You may want to edit the mapping file in Excel to shorten the names of the variables. Otherwise the boxplots will not be legible.
+  1. [Making distance boxplots](http://qiime.org/tutorials/creating_distance_comparison_plots.html). Note: this is only for discrete variables. You may want to edit the mapping file in Excel to shorten the names of the variables. Otherwise the boxplots will not be legible.
   2. [Running supervised learning](http://qiime.org/tutorials/running_supervised_learning.html).
   3. Performing [Procrustes analysis](http://qiime.org/tutorials/procrustes_analysis.html) to compare unweighted UniFrac distances to weighted UniFrac distances.
