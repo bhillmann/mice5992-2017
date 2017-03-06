@@ -54,6 +54,7 @@ This is a short tutorial on how to get started on your individual project.
  ```bash
     ls
  ```
+5. Locate your personal project files. The mapping files for the project are in `/home/mice5992/shared/project1/<your username>_map.txt`; the DNA sequences are in `/home/mice5992/shared/project1/seqs_subset.fna`
 
 ### Analysis
 4. Now proceed with the core diversity analyses and a/b testing using the tools you
@@ -61,3 +62,8 @@ This is a short tutorial on how to get started on your individual project.
 
  **Note:** you should copy the mapping file over to your computer using FTP so that you can inspect it before proceeding.
  
+### Bonus 
+Follow instructions in the following online [QIIME Tutorials](http://qiime.org/tutorials/index.html):
+  1. [Making distance boxplots](http://qiime.org/tutorials/creating_distance_comparison_plots.html). Note: this is only for discete variables. You may want to edit the mapping file in Excel to shorten the names of the variables. Otherwise the boxplots will not be legible.
+  2. [Running supervised learning](http://qiime.org/tutorials/running_supervised_learning.html).
+  3. Performing [Procrustes analysis](http://qiime.org/tutorials/procrustes_analysis.html) to compare unweighted UniFrac distances to weighted UniFrac distances.
