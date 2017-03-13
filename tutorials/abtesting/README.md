@@ -140,7 +140,7 @@ There are three different types of experimental variables that matter for these 
 
 The goal of these tests is to answer the question: Is overall microbiome variation statistically associated with a particular experimental variable?
 
-We can test the same three different types of experimental variables as follows, using the same script and method. Use QIIME script [`compare_categories.py`](http://qiime.org/scripts/compare_categories.html) with flag `-s adonis`. This uses the `adonis` test in `R` (http://cc.oulu.fi/~jarioksa/softhelp/vegan/html/adonis.html), which is a non-parametric test for different means across two groups.
+We can test the same three different types of experimental variables as follows, using the same script and method. Use QIIME script [`compare_categories.py`](http://qiime.org/scripts/compare_categories.html) with flag `-s adonis`. This uses the `adonis` test in `R` (http://cc.oulu.fi/~jarioksa/softhelp/vegan/html/adonis.html), which is a non-parametric test for different means across groups, or for association of beta diversity distances with a continuous variabe.
 
  Run an example:
 
