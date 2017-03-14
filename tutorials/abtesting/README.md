@@ -150,7 +150,7 @@ We can test the same three different types of experimental variables as follows,
     compare_categories.py -i betaplots/unweighted_unifrac_dm.txt -m ../../data/globalgut/map.txt -c AGE_GROUP -o beta_age_group_significance --method adonis
  ```
  
- Print the significance testing results. The p-value is at the top right uner `Pr(>F)`:
+ Print the significance testing results. The p-value is at the top right under `Pr(>F)`:
  
  ```bash
     cat beta_age_group_significance/adonis_results.txt
@@ -172,7 +172,7 @@ QIIME only currently has the ability to handle discrete variable testing for alp
     compare_alpha_diversity.py -i alphaplots/alpha_div_collated/PD_whole_tree.txt -m ../../data/globalgut/map.txt -c AGE_GROUP -o alpha_age_group_significance -t parametric
  ```
  
- Print the significance testing results. The p-value is at the top right uner `Pr(>F)`:
+ Print the significance testing results. The p-value is at the top right:
  
  ```bash
     cat alpha_country_significance/COUNTRY_stats.txt
