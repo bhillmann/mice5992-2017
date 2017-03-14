@@ -77,12 +77,12 @@ Then change directories into the course repository folder that you downloaded:
  ```
  
  
-### Background
+## Overview
 This tutorial folder already contains the folders `alphaplots`, `betaplots`, `taxaplots` that come from the [Core diversity tutorial](../corediv).
 
 There are three types of statistical testing that we will be doing in QIIME: taxonomic profiles, beta diversity, and alpha diversity.
 
-#### Taxonomic profile significance.
+## Taxonomic profile significance.
 
 The goal of these tests is to answer the question: Is any species statistically associated with a particular experimental variable?
 
@@ -136,7 +136,7 @@ There are three different types of experimental variables that matter for these 
  ```
 
 
-#### Beta diversity significance.
+## Beta diversity significance.
 
 The goal of these tests is to answer the question: Is overall microbiome variation statistically associated with a particular experimental variable?
 
@@ -159,7 +159,7 @@ We can test the same three different types of experimental variables as follows,
  Was the result significant? What does this mean?
  
 
-#### Alpha diversity significance.
+## Alpha diversity significance.
 
 The goal of this test is to answer the question: Is microbiome biodiversity (i.e. diversity within a sample) statistically associated with a particular experimental variable?
 
