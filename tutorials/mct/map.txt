@@ -1,0 +1,371 @@
+#SampleID	UserName	StudyDayNo	Gender	Supplement	Waist.Circumference	Study.Status	oilGrams.assigned	fecal.status	fecal.time	BMI	Weight.Change
+MCT.f.0052	Subject_13	1	F	1	78	Complete	0	1	11:30 AM	18.9	0.6
+MCT.f.0069	Subject_14	1	F	2	85.5	Complete	0	1	7:45 PM	19.9	-0.6
+MCT.f.0086	Subject_35	1	M	1	87	Complete	0	1	4:34 PM	22.7	-1.3
+MCT.f.0103	Subject_36	1	M	1	95.5	Complete	0	1	9:40 AM	27.4	-3.2
+MCT.f.0120	Subject_37	1	M	1	81	Complete	0	1	7:25 AM	18.8	-0.6
+MCT.f.0137	Subject_15	1	F	1	85	Complete	0	1	10:00 AM	23.8	0.4
+MCT.f.0154	Subject_16	1	F	1	NA	Complete	0	1	6:30 AM	23	1.2
+MCT.f.0188	Subject_17	1	F	1	79	Complete	0	1	1:22 PM	21.1	-1.4
+MCT.f.0256	Subject_20	1	F	2	76	Complete	0	1	7:50 AM	17	-0.1
+MCT.f.0290	Subject_40	1	M	1	75	Complete	0	1	7:00 AM	22.1	0.4
+MCT.f.0307	Subject_22	1	F	1	87	Complete	0	1	5:45 PM	22.9	0.7
+MCT.f.0392	Subject_26	1	F	2	79.5	Complete	0	1	10:00 AM	22.2	-1.4
+MCT.f.0426	Subject_43	1	M	2	94.2	Complete	0	1	7:45 AM	26	-2.8
+MCT.f.0443	Subject_27	1	F	2	90	Complete	0	1	3:00 PM	27.3	-0.1
+MCT.f.0460	Subject_28	1	F	1	84.7	No blood draw	0	1	8:00 AM	18.9	NA
+MCT.f.0511	Subject_31	1	F	2	84.9	Complete	0	1	12:45 PM	22.1	-0.3
+MCT.f.0528	Subject_44	1	M	2	86.7	Complete	0	1	10:30 AM	25.3	-0.4
+MCT.f.0596	Subject_46	1	M	2	100.4	Complete	0	1	7:40 AM	27.8	0.2
+MCT.f.0613	Subject_47	1	M	1	97.5	Complete	0	1	6:00 AM	27.3	-1.3
+MCT.f.0002	Subject_11	2	F	2	NA	Complete	0	1	9:00 AM	25	-0.4
+MCT.f.0070	Subject_14	2	F	2	85.5	Complete	0	1	8:15 AM	19.9	-0.6
+MCT.f.0104	Subject_36	2	M	1	95.5	Complete	0	1	9:10 AM	27.4	-3.2
+MCT.f.0121	Subject_37	2	M	1	81	Complete	0	1	6:40 AM	18.8	-0.6
+MCT.f.0138	Subject_15	2	F	1	85	Complete	0	1	8:15 AM	23.8	0.4
+MCT.f.0155	Subject_16	2	F	1	NA	Complete	0	1	6:17 AM	23	1.2
+MCT.f.0189	Subject_17	2	F	1	79	Complete	0	1	5:19 PM	21.1	-1.4
+MCT.f.0206	Subject_18	2	F	2	78.5	Complete	0	1	9:10 PM	21.7	0.1
+MCT.f.0223	Subject_39	2	M	2	90.5	Complete	0	1	7:30 AM	25.9	0
+MCT.f.0308	Subject_22	2	F	1	87	Complete	0	1	7:35 PM	22.9	0.7
+MCT.f.0325	Subject_23	2	F	2	91	Complete	0	1	3:10 PM	23.3	-0.7
+MCT.f.0359	Subject_25	2	F	1	76.5	Complete	0	1	7:30 PM	18.3	1.6
+MCT.f.0393	Subject_26	2	F	2	79.5	Complete	0	1	11:00 AM	22.2	-1.4
+MCT.f.0410	Subject_42	2	M	1	100	Complete	0	1	8:40 AM	31.6	0
+MCT.f.0427	Subject_43	2	M	2	94.2	Complete	0	1	6:33 AM	26	-2.8
+MCT.f.0444	Subject_27	2	F	2	90	Complete	0	1	10:00 AM	27.3	-0.1
+MCT.f.0512	Subject_31	2	F	2	84.9	Complete	0	1	2:45 PM	22.1	-0.3
+MCT.f.0529	Subject_44	2	M	2	86.7	Complete	0	1	7:30 AM	25.3	-0.4
+MCT.f.0580	Subject_33	2	F	2	84.5	Complete	0	1	5:55 AM	24.2	1
+MCT.f.0597	Subject_46	2	M	2	100.4	Complete	0	1	7:15 AM	27.8	0.2
+MCT.f.0614	Subject_47	2	M	1	97.5	Complete	0	1	6:45 AM	27.3	-1.3
+MCT.f.0003	Subject_11	3	F	2	NA	Complete	0	1	10:30 AM	25	-0.4
+MCT.f.0037	Subject_34	3	M	1	104	Complete	0	1	4:21 PM	26.6	2.9
+MCT.f.0071	Subject_14	3	F	2	85.5	Complete	0	1	2:20 PM	19.9	-0.6
+MCT.f.0122	Subject_37	3	M	1	81	Complete	0	1	7:30 AM	18.8	-0.6
+MCT.f.0139	Subject_15	3	F	1	85	Complete	0	1	10:30 AM	23.8	0.4
+MCT.f.0173	Subject_38	3	M	2	84	Complete	0	1	1:40 PM	22.1	-2.3
+MCT.f.0190	Subject_17	3	F	1	79	Complete	0	1	11:17 AM	21.1	-1.4
+MCT.f.0241	Subject_19	3	F	1	79	Complete	0	1	9:00 AM	18.7	-1.2
+MCT.f.0258	Subject_20	3	F	2	76	Complete	0	1	6:50 AM	17	-0.1
+MCT.f.0292	Subject_40	3	M	1	75	Complete	0	1	9:40 AM	22.1	0.4
+MCT.f.0326	Subject_23	3	F	2	91	Complete	0	1	11:10 AM	23.3	-0.7
+MCT.f.0360	Subject_25	3	F	1	76.5	Complete	0	1	9:45 AM	18.3	1.6
+MCT.f.0394	Subject_26	3	F	2	79.5	Complete	0	1	9:51 PM	22.2	-1.4
+MCT.f.0428	Subject_43	3	M	2	94.2	Complete	0	1	11:00 AM	26	-2.8
+MCT.f.0445	Subject_27	3	F	2	90	Complete	0	1	7:30 AM	27.3	-0.1
+MCT.f.0462	Subject_28	3	F	1	84.7	No blood draw	0	1	2:25 PM	18.9	NA
+MCT.f.0513	Subject_31	3	F	2	84.9	Complete	0	1	9:15 AM	22.1	-0.3
+MCT.f.0530	Subject_44	3	M	2	86.7	Complete	0	1	8:30 AM	25.3	-0.4
+MCT.f.0547	Subject_45	3	M	1	84.6	Complete	0	1	NA	23.4	-0.6
+MCT.f.0564	Subject_32	3	F	2	85.5	No blood draw	0	1	NA	20.7	NA
+MCT.f.0581	Subject_33	3	F	2	84.5	Complete	0	1	6:00 AM	24.2	1
+MCT.f.0598	Subject_46	3	M	2	100.4	Complete	0	1	7:20 AM	27.8	0.2
+MCT.f.0615	Subject_47	3	M	1	97.5	Complete	0	1	7:35 AM	27.3	-1.3
+MCT.f.0004	Subject_11	4	F	2	NA	Complete	0	1	8:55 AM	25	-0.4
+MCT.f.0038	Subject_34	4	M	1	104	Complete	0	1	NA	26.6	2.9
+MCT.f.0055	Subject_13	4	F	1	78	Complete	0	1	8:00 AM	18.9	0.6
+MCT.f.0072	Subject_14	4	F	2	85.5	Complete	0	1	1:30 PM	19.9	-0.6
+MCT.f.0089	Subject_35	4	M	1	87	Complete	0	1	1:00 PM	22.7	-1.3
+MCT.f.0106	Subject_36	4	M	1	95.5	Complete	0	1	10:00 AM	27.4	-3.2
+MCT.f.0123	Subject_37	4	M	1	81	Complete	0	1	8:00 AM	18.8	-0.6
+MCT.f.0174	Subject_38	4	M	2	84	Complete	0	1	1:40 PM	22.1	-2.3
+MCT.f.0191	Subject_17	4	F	1	79	Complete	0	1	8:45 AM	21.1	-1.4
+MCT.f.0225	Subject_39	4	M	2	90.5	Complete	0	1	No Time	25.9	0
+MCT.f.0259	Subject_20	4	F	2	76	Complete	0	1	8:30 AM	17	-0.1
+MCT.f.0310	Subject_22	4	F	1	87	Complete	0	1	5:30 PM	22.9	0.7
+MCT.f.0327	Subject_23	4	F	2	91	Complete	0	1	3:30 PM	23.3	-0.7
+MCT.f.0344	Subject_24	4	F	1	79	Complete	0	1	5:00 PM	20.6	-0.1
+MCT.f.0378	Subject_41	4	M	2	96	Complete	0	1	9:30 AM	22.3	-2.6
+MCT.f.0395	Subject_26	4	F	2	79.5	Complete	0	1	12:16 PM	22.2	-1.4
+MCT.f.0412	Subject_42	4	M	1	100	Complete	0	1	4:00 PM	31.6	0
+MCT.f.0429	Subject_43	4	M	2	94.2	Complete	0	1	9:00 AM	26	-2.8
+MCT.f.0446	Subject_27	4	F	2	90	Complete	0	1	8:30 AM	27.3	-0.1
+MCT.f.0514	Subject_31	4	F	2	84.9	Complete	0	1	10:00 AM	22.1	-0.3
+MCT.f.0565	Subject_32	4	F	2	85.5	No blood draw	0	1	NA	20.7	NA
+MCT.f.0582	Subject_33	4	F	2	84.5	Complete	0	1	6:08 AM	24.2	1
+MCT.f.0599	Subject_46	4	M	2	100.4	Complete	0	1	6:30 AM	27.8	0.2
+MCT.f.0616	Subject_47	4	M	1	97.5	Complete	0	1	7:00 AM	27.3	-1.3
+MCT.f.0107	Subject_36	5	M	1	95.5	Complete	0	1	10:45 PM	27.4	-3.2
+MCT.f.0124	Subject_37	5	M	1	81	Complete	0	1	11:05 AM	18.8	-0.6
+MCT.f.0141	Subject_15	5	F	1	85	Complete	0	1	10:05 AM	23.8	0.4
+MCT.f.0158	Subject_16	5	F	1	NA	Complete	0	1	7:30 AM	23	1.2
+MCT.f.0192	Subject_17	5	F	1	79	Complete	0	1	1:30 PM	21.1	-1.4
+MCT.f.0209	Subject_18	5	F	2	78.5	Complete	0	1	11:15 AM	21.7	0.1
+MCT.f.0243	Subject_19	5	F	1	79	Complete	0	1	9:30 AM	18.7	-1.2
+MCT.f.0260	Subject_20	5	F	2	76	Complete	0	1	7:20 AM	17	-0.1
+MCT.f.0311	Subject_22	5	F	1	87	Complete	0	1	3:33 PM	22.9	0.7
+MCT.f.0345	Subject_24	5	F	1	79	Complete	0	1	3:30 PM	20.6	-0.1
+MCT.f.0362	Subject_25	5	F	1	76.5	Complete	0	1	12:55 PM	18.3	1.6
+MCT.f.0379	Subject_41	5	M	2	96	Complete	0	1	10:10 AM	22.3	-2.6
+MCT.f.0396	Subject_26	5	F	2	79.5	Complete	0	1	11:50 AM	22.2	-1.4
+MCT.f.0430	Subject_43	5	M	2	94.2	Complete	0	1	12:00 PM	26	-2.8
+MCT.f.0447	Subject_27	5	F	2	90	Complete	0	1	7:45 AM	27.3	-0.1
+MCT.f.0464	Subject_28	5	F	1	84.7	No blood draw	0	1	3:07 PM	18.9	NA
+MCT.f.0481	Subject_29	5	F	2	96	Complete	0	1	1:45 PM	26.2	-1.1
+MCT.f.0532	Subject_44	5	M	2	86.7	Complete	0	1	10:20 AM	25.3	-0.4
+MCT.f.0549	Subject_45	5	M	1	84.6	Complete	0	1	NA	23.4	-0.6
+MCT.f.0566	Subject_32	5	F	2	85.5	No blood draw	0	1	NA	20.7	NA
+MCT.f.0583	Subject_33	5	F	2	84.5	Complete	0	1	4:00 PM	24.2	1
+MCT.f.0600	Subject_46	5	M	2	100.4	Complete	0	1	4:30 AM	27.8	0.2
+MCT.f.0006	Subject_11	6	F	2	NA	Complete	0	1	8:00 AM	25	-0.4
+MCT.f.0057	Subject_13	6	F	1	78	Complete	0	1	9:15 AM	18.9	0.6
+MCT.f.0074	Subject_14	6	F	2	85.5	Complete	0	1	10:30 AM	19.9	-0.6
+MCT.f.0091	Subject_35	6	M	1	87	Complete	0	1	NA	22.7	-1.3
+MCT.f.0108	Subject_36	6	M	1	95.5	Complete	0	1	9:30 AM	27.4	-3.2
+MCT.f.0142	Subject_15	6	F	1	85	Complete	0	1	9:00 AM	23.8	0.4
+MCT.f.0159	Subject_16	6	F	1	NA	Complete	0	1	9:50 AM	23	1.2
+MCT.f.0176	Subject_38	6	M	2	84	Complete	0	1	12:40 PM	22.1	-2.3
+MCT.f.0193	Subject_17	6	F	1	79	Complete	0	1	12:10 PM	21.1	-1.4
+MCT.f.0261	Subject_20	6	F	2	76	Complete	0	1	9:20 AM	17	-0.1
+MCT.f.0295	Subject_40	6	M	1	75	Complete	0	1	9:15 AM	22.1	0.4
+MCT.f.0312	Subject_22	6	F	1	87	Complete	0	1	7:10 PM	22.9	0.7
+MCT.f.0329	Subject_23	6	F	2	91	Complete	0	1	9:30 AM	23.3	-0.7
+MCT.f.0346	Subject_24	6	F	1	79	Complete	0	1	1:00 PM	20.6	-0.1
+MCT.f.0363	Subject_25	6	F	1	76.5	Complete	0	1	10:05 AM	18.3	1.6
+MCT.f.0397	Subject_26	6	F	2	79.5	Complete	0	1	4:28 PM	22.2	-1.4
+MCT.f.0414	Subject_42	6	M	1	100	Complete	0	1	10:00 PM	31.6	0
+MCT.f.0431	Subject_43	6	M	2	94.2	Complete	0	1	9:00 AM	26	-2.8
+MCT.f.0482	Subject_29	6	F	2	96	Complete	0	1	2:30 PM	26.2	-1.1
+MCT.f.0516	Subject_31	6	F	2	84.9	Complete	0	1	11:55 AM	22.1	-0.3
+MCT.f.0533	Subject_44	6	M	2	86.7	Complete	0	1	6:10 PM	25.3	-0.4
+MCT.f.0567	Subject_32	6	F	2	85.5	No blood draw	0	1	NA	20.7	NA
+MCT.f.0601	Subject_46	6	M	2	100.4	Complete	0	1	11:50 AM	27.8	0.2
+MCT.f.0618	Subject_47	6	M	1	97.5	Complete	0	1	8:15 AM	27.3	-1.3
+MCT.f.0007	Subject_11	7	F	2	NA	Complete	0	1	9:30 AM	25	-0.4
+MCT.f.0058	Subject_13	7	F	1	78	Complete	0	1	10:30 AM	18.9	0.6
+MCT.f.0075	Subject_14	7	F	2	85.5	Complete	0	1	8:15 AM	19.9	-0.6
+MCT.f.0109	Subject_36	7	M	1	95.5	Complete	0	1	7:45 AM	27.4	-3.2
+MCT.f.0143	Subject_15	7	F	1	85	Complete	0	1	9:00 AM	23.8	0.4
+MCT.f.0160	Subject_16	7	F	1	NA	Complete	0	1	5:20 AM	23	1.2
+MCT.f.0194	Subject_17	7	F	1	79	Complete	0	1	9:50 AM	21.1	-1.4
+MCT.f.0245	Subject_19	7	F	1	79	Complete	0	1	7:00 AM	18.7	-1.2
+MCT.f.0313	Subject_22	7	F	1	87	Complete	0	1	6:05 PM	22.9	0.7
+MCT.f.0330	Subject_23	7	F	2	91	Complete	0	1	NA	23.3	-0.7
+MCT.f.0347	Subject_24	7	F	1	79	Complete	0	1	4:30 PM	20.6	-0.1
+MCT.f.0364	Subject_25	7	F	1	76.5	Complete	0	1	7:40 AM	18.3	1.6
+MCT.f.0381	Subject_41	7	M	2	96	Complete	0	1	9:00 AM	22.3	-2.6
+MCT.f.0415	Subject_42	7	M	1	100	Complete	0	1	8:00 AM	31.6	0
+MCT.f.0432	Subject_43	7	M	2	94.2	Complete	0	1	6:45 AM	26	-2.8
+MCT.f.0534	Subject_44	7	M	2	86.7	Complete	0	1	8:58 AM	25.3	-0.4
+MCT.f.0551	Subject_45	7	M	1	84.6	Complete	0	1	NA	23.4	-0.6
+MCT.f.0568	Subject_32	7	F	2	85.5	No blood draw	0	1	NA	20.7	NA
+MCT.f.0602	Subject_46	7	M	2	100.4	Complete	0	1	6:35 AM	27.8	0.2
+MCT.f.0008	Subject_11	8	F	2	NA	Complete	12	1	9:20 AM	25	-0.4
+MCT.f.0042	Subject_34	8	M	1	104	Complete	18	1	3:00 PM	26.6	2.9
+MCT.f.0076	Subject_14	8	F	2	85.5	Complete	10	1	2:30 PM	19.9	-0.6
+MCT.f.0144	Subject_15	8	F	1	85	Complete	14	1	8:30 AM	23.8	0.4
+MCT.f.0161	Subject_16	8	F	1	NA	Complete	13	1	7:20 AM	23	1.2
+MCT.f.0178	Subject_38	8	M	2	84	Complete	13	1	5:30 PM	22.1	-2.3
+MCT.f.0195	Subject_17	8	F	1	79	Complete	12	1	12:10 PM	21.1	-1.4
+MCT.f.0229	Subject_39	8	M	2	90.5	Complete	16	1	7:30 AM	25.9	0
+MCT.f.0263	Subject_20	8	F	2	76	Complete	13	1	12:15 PM	17	-0.1
+MCT.f.0297	Subject_40	8	M	1	75	Complete	16	1	7:30 AM	22.1	0.4
+MCT.f.0314	Subject_22	8	F	1	87	Complete	12	1	10:23 PM	22.9	0.7
+MCT.f.0331	Subject_23	8	F	2	91	Complete	11	1	1:10 PM	23.3	-0.7
+MCT.f.0348	Subject_24	8	F	1	79	Complete	10	1	6:30 AM	20.6	-0.1
+MCT.f.0365	Subject_25	8	F	1	76.5	Complete	10	1	8:30 AM	18.3	1.6
+MCT.f.0416	Subject_42	8	M	1	100	Complete	17	1	8:15 AM	31.6	0
+MCT.f.0450	Subject_27	8	F	2	90	Complete	11	1	7:30 AM	27.3	-0.1
+MCT.f.0467	Subject_28	8	F	1	84.7	No blood draw	10	1	2:55 PM	18.9	NA
+MCT.f.0535	Subject_44	8	M	2	86.7	Complete	12	1	8:41 AM	25.3	-0.4
+MCT.f.0552	Subject_45	8	M	1	84.6	Complete	12	1	NA	23.4	-0.6
+MCT.f.0586	Subject_33	8	F	2	84.5	Complete	12	1	5:55 AM	24.2	1
+MCT.f.0603	Subject_46	8	M	2	100.4	Complete	11	1	7:00 AM	27.8	0.2
+MCT.f.0620	Subject_47	8	M	1	97.5	Complete	14	1	6:15 PM	27.3	-1.3
+MCT.f.0009	Subject_11	9	F	2	NA	Complete	12	1	8:40 AM	25	-0.4
+MCT.f.0043	Subject_34	9	M	1	104	Complete	18	1	5:00 PM	26.6	2.9
+MCT.f.0060	Subject_13	9	F	1	78	Complete	12	1	9:00 AM	18.9	0.6
+MCT.f.0077	Subject_14	9	F	2	85.5	Complete	10	1	8:10 AM	19.9	-0.6
+MCT.f.0128	Subject_37	9	M	1	81	Complete	18	1	7:45 AM	18.8	-0.6
+MCT.f.0145	Subject_15	9	F	1	85	Complete	14	1	10:00 AM	23.8	0.4
+MCT.f.0162	Subject_16	9	F	1	NA	Complete	13	1	7:06 AM	23	1.2
+MCT.f.0196	Subject_17	9	F	1	79	Complete	12	1	12:00 PM	21.1	-1.4
+MCT.f.0230	Subject_39	9	M	2	90.5	Complete	16	1	7:30 AM	25.9	0
+MCT.f.0247	Subject_19	9	F	1	79	Complete	10	1	8:30 AM	18.7	-1.2
+MCT.f.0264	Subject_20	9	F	2	76	Complete	13	1	6:20 AM	17	-0.1
+MCT.f.0298	Subject_40	9	M	1	75	Complete	16	1	9:45 AM	22.1	0.4
+MCT.f.0315	Subject_22	9	F	1	87	Complete	12	1	7:18 PM	22.9	0.7
+MCT.f.0349	Subject_24	9	F	1	79	Complete	10	1	7:00 PM	20.6	-0.1
+MCT.f.0366	Subject_25	9	F	1	76.5	Complete	10	1	11:20 AM	18.3	1.6
+MCT.f.0383	Subject_41	9	M	2	96	Complete	14	1	9:30 AM	22.3	-2.6
+MCT.f.0400	Subject_26	9	F	2	79.5	Complete	11	1	9:00 PM	22.2	-1.4
+MCT.f.0417	Subject_42	9	M	1	100	Complete	17	1	8:00 AM	31.6	0
+MCT.f.0434	Subject_43	9	M	2	94.2	Complete	15	1	5:30 PM	26	-2.8
+MCT.f.0519	Subject_31	9	F	2	84.9	Complete	11	1	9:10 AM	22.1	-0.3
+MCT.f.0553	Subject_45	9	M	1	84.6	Complete	12	1	NA	23.4	-0.6
+MCT.f.0570	Subject_32	9	F	2	85.5	No blood draw	9	1	NA	20.7	NA
+MCT.f.0587	Subject_33	9	F	2	84.5	Complete	12	1	6:00 AM	24.2	1
+MCT.f.0604	Subject_46	9	M	2	100.4	Complete	11	1	7:30 AM	27.8	0.2
+MCT.f.0621	Subject_47	9	M	1	97.5	Complete	14	1	6:45 PM	27.3	-1.3
+MCT.f.0010	Subject_11	10	F	2	NA	Complete	12	1	8:55 AM	25	-0.4
+MCT.f.0044	Subject_34	10	M	1	104	Complete	18	1	5:20 PM	26.6	2.9
+MCT.f.0061	Subject_13	10	F	1	78	Complete	12	1	8:00 AM	18.9	0.6
+MCT.f.0095	Subject_35	10	M	1	87	Complete	17	1	12:20 PM	22.7	-1.3
+MCT.f.0112	Subject_36	10	M	1	95.5	Complete	18	1	9:30 AM	27.4	-3.2
+MCT.f.0163	Subject_16	10	F	1	NA	Complete	13	1	7:28 AM	23	1.2
+MCT.f.0180	Subject_38	10	M	2	84	Complete	13	1	12:30 PM	22.1	-2.3
+MCT.f.0197	Subject_17	10	F	1	79	Complete	12	1	11:40 AM	21.1	-1.4
+MCT.f.0214	Subject_18	10	F	2	78.5	Complete	11	1	2:40 PM	21.7	0.1
+MCT.f.0231	Subject_39	10	M	2	90.5	Complete	16	1	7:30 AM	25.9	0
+MCT.f.0265	Subject_20	10	F	2	76	Complete	13	1	8:05 AM	17	-0.1
+MCT.f.0299	Subject_40	10	M	1	75	Complete	16	1	NA	22.1	0.4
+MCT.f.0316	Subject_22	10	F	1	87	Complete	12	1	10:30 PM	22.9	0.7
+MCT.f.0486	Subject_29	10	F	2	96	Complete	11	1	8:20 PM	26.2	-1.1
+MCT.f.0520	Subject_31	10	F	2	84.9	Complete	11	1	8:45 PM	22.1	-0.3
+MCT.f.0554	Subject_45	10	M	1	84.6	Complete	12	1	NA	23.4	-0.6
+MCT.f.0605	Subject_46	10	M	2	100.4	Complete	11	1	7:40 AM	27.8	0.2
+MCT.f.0622	Subject_47	10	M	1	97.5	Complete	14	1	9:30 PM	27.3	-1.3
+MCT.f.0011	Subject_11	11	F	2	NA	Complete	12	1	9:00 AM	25	-0.4
+MCT.f.0045	Subject_34	11	M	1	104	Complete	18	1	7:30 PM	26.6	2.9
+MCT.f.0130	Subject_37	11	M	1	81	Complete	18	1	7:50 AM	18.8	-0.6
+MCT.f.0181	Subject_38	11	M	2	84	Complete	13	1	12:20 PM	22.1	-2.3
+MCT.f.0215	Subject_18	11	F	2	78.5	Complete	11	1	8:30 PM	21.7	0.1
+MCT.f.0232	Subject_39	11	M	2	90.5	Complete	16	1	7:40 AM	25.9	0
+MCT.f.0249	Subject_19	11	F	1	79	Complete	10	1	9:00 AM	18.7	-1.2
+MCT.f.0300	Subject_40	11	M	1	75	Complete	16	1	9:30 AM	22.1	0.4
+MCT.f.0334	Subject_23	11	F	2	91	Complete	11	1	9:30 AM	23.3	-0.7
+MCT.f.0351	Subject_24	11	F	1	79	Complete	10	1	4:05 PM	20.6	-0.1
+MCT.f.0368	Subject_25	11	F	1	76.5	Complete	10	1	NA	18.3	1.6
+MCT.f.0402	Subject_26	11	F	2	79.5	Complete	11	1	11:28 AM	22.2	-1.4
+MCT.f.0419	Subject_42	11	M	1	100	Complete	17	1	7:40 AM	31.6	0
+MCT.f.0453	Subject_27	11	F	2	90	Complete	11	1	2:00 PM	27.3	-0.1
+MCT.f.0470	Subject_28	11	F	1	84.7	No blood draw	10	1	8:10 AM	18.9	NA
+MCT.f.0538	Subject_44	11	M	2	86.7	Complete	12	1	10:00 AM	25.3	-0.4
+MCT.f.0555	Subject_45	11	M	1	84.6	Complete	12	1	NA	23.4	-0.6
+MCT.f.0606	Subject_46	11	M	2	100.4	Complete	11	1	7:30 AM	27.8	0.2
+MCT.f.0623	Subject_47	11	M	1	97.5	Complete	14	1	6:40 PM	27.3	-1.3
+MCT.f.0012	Subject_11	12	F	2	NA	Complete	12	1	12:00 PM	25	-0.4
+MCT.f.0063	Subject_13	12	F	1	78	Complete	12	1	9:30 AM	18.9	0.6
+MCT.f.0080	Subject_14	12	F	2	85.5	Complete	10	1	10:30 AM	19.9	-0.6
+MCT.f.0114	Subject_36	12	M	1	95.5	Complete	18	1	1:40 AM	27.4	-3.2
+MCT.f.0148	Subject_15	12	F	1	85	Complete	14	1	12:40 PM	23.8	0.4
+MCT.f.0182	Subject_38	12	M	2	84	Complete	13	1	12:30 PM	22.1	-2.3
+MCT.f.0216	Subject_18	12	F	2	78.5	Complete	11	1	10:45 AM	21.7	0.1
+MCT.f.0233	Subject_39	12	M	2	90.5	Complete	16	1	9:47 AM	25.9	0
+MCT.f.0250	Subject_19	12	F	1	79	Complete	10	1	10:00 AM	18.7	-1.2
+MCT.f.0267	Subject_20	12	F	2	76	Complete	13	1	8:50 PM	17	-0.1
+MCT.f.0301	Subject_40	12	M	1	75	Complete	16	1	3:30 PM	22.1	0.4
+MCT.f.0318	Subject_22	12	F	1	87	Complete	12	1	6:40 PM	22.9	0.7
+MCT.f.0335	Subject_23	12	F	2	91	Complete	11	1	3:00 PM	23.3	-0.7
+MCT.f.0352	Subject_24	12	F	1	79	Complete	10	1	9:45 AM	20.6	-0.1
+MCT.f.0369	Subject_25	12	F	1	76.5	Complete	10	1	8:50 AM	18.3	1.6
+MCT.f.0403	Subject_26	12	F	2	79.5	Complete	11	1	10:49 AM	22.2	-1.4
+MCT.f.0437	Subject_43	12	M	2	94.2	Complete	15	1	8:45 AM	26	-2.8
+MCT.f.0522	Subject_31	12	F	2	84.9	Complete	11	1	8:30 AM	22.1	-0.3
+MCT.f.0539	Subject_44	12	M	2	86.7	Complete	12	1	11:44 AM	25.3	-0.4
+MCT.f.0556	Subject_45	12	M	1	84.6	Complete	12	1	NA	23.4	-0.6
+MCT.f.0573	Subject_32	12	F	2	85.5	No blood draw	9	1	NA	20.7	NA
+MCT.f.0590	Subject_33	12	F	2	84.5	Complete	12	1	8:45 AM	24.2	1
+MCT.f.0607	Subject_46	12	M	2	100.4	Complete	11	1	8:30 AM	27.8	0.2
+MCT.f.0624	Subject_47	12	M	1	97.5	Complete	14	1	6:40 PM	27.3	-1.3
+MCT.f.0013	Subject_11	13	F	2	NA	Complete	12	1	8:00 AM	25	-0.4
+MCT.f.0081	Subject_14	13	F	2	85.5	Complete	10	1	2:15 PM	19.9	-0.6
+MCT.f.0098	Subject_35	13	M	1	87	Complete	17	1	7:00 PM	22.7	-1.3
+MCT.f.0115	Subject_36	13	M	1	95.5	Complete	18	1	10:30 PM	27.4	-3.2
+MCT.f.0149	Subject_15	13	F	1	85	Complete	14	1	9:45 AM	23.8	0.4
+MCT.f.0166	Subject_16	13	F	1	NA	Complete	13	1	9:30 AM	23	1.2
+MCT.f.0183	Subject_38	13	M	2	84	Complete	13	1	12:00 PM	22.1	-2.3
+MCT.f.0200	Subject_17	13	F	1	79	Complete	12	1	11:30 AM	21.1	-1.4
+MCT.f.0302	Subject_40	13	M	1	75	Complete	16	1	12:00 PM	22.1	0.4
+MCT.f.0319	Subject_22	13	F	1	87	Complete	12	1	1:40 PM	22.9	0.7
+MCT.f.0336	Subject_23	13	F	2	91	Complete	11	1	11:10 AM	23.3	-0.7
+MCT.f.0387	Subject_41	13	M	2	96	Complete	14	1	1:10 PM	22.3	-2.6
+MCT.f.0421	Subject_42	13	M	1	100	Complete	17	1	11:30 PM	31.6	0
+MCT.f.0438	Subject_43	13	M	2	94.2	Complete	15	1	8:30 AM	26	-2.8
+MCT.f.0455	Subject_27	13	F	2	90	Complete	11	1	10:15 AM	27.3	-0.1
+MCT.f.0472	Subject_28	13	F	1	84.7	No blood draw	10	1	9:39 PM	18.9	NA
+MCT.f.0489	Subject_29	13	F	2	96	Complete	11	1	4:08 PM	26.2	-1.1
+MCT.f.0540	Subject_44	13	M	2	86.7	Complete	12	1	12:10 PM	25.3	-0.4
+MCT.f.0557	Subject_45	13	M	1	84.6	Complete	12	1	NA	23.4	-0.6
+MCT.f.0574	Subject_32	13	F	2	85.5	No blood draw	9	1	NA	20.7	NA
+MCT.f.0608	Subject_46	13	M	2	100.4	Complete	11	1	8:00 AM	27.8	0.2
+MCT.f.0014	Subject_11	14	F	2	NA	Complete	12	1	9:00 AM	25	-0.4
+MCT.f.0048	Subject_34	14	M	1	104	Complete	18	1	NA	26.6	2.9
+MCT.f.0065	Subject_13	14	F	1	78	Complete	12	1	NA	18.9	0.6
+MCT.f.0116	Subject_36	14	M	1	95.5	Complete	18	1	8:10 AM	27.4	-3.2
+MCT.f.0133	Subject_37	14	M	1	81	Complete	18	1	6:40 AM	18.8	-0.6
+MCT.f.0184	Subject_38	14	M	2	84	Complete	13	1	11:10 AM	22.1	-2.3
+MCT.f.0218	Subject_18	14	F	2	78.5	Complete	11	1	8:20 PM	21.7	0.1
+MCT.f.0235	Subject_39	14	M	2	90.5	Complete	16	1	7:30 AM	25.9	0
+MCT.f.0252	Subject_19	14	F	1	79	Complete	10	1	8:15 AM	18.7	-1.2
+MCT.f.0269	Subject_20	14	F	2	76	Complete	13	1	8:03 AM	17	-0.1
+MCT.f.0303	Subject_40	14	M	1	75	Complete	16	1	9:30 AM	22.1	0.4
+MCT.f.0337	Subject_23	14	F	2	91	Complete	11	1	9:30 AM	23.3	-0.7
+MCT.f.0354	Subject_24	14	F	1	79	Complete	10	1	1:30 PM	20.6	-0.1
+MCT.f.0388	Subject_41	14	M	2	96	Complete	14	1	9:35 AM	22.3	-2.6
+MCT.f.0405	Subject_26	14	F	2	79.5	Complete	11	1	12:07 PM	22.2	-1.4
+MCT.f.0422	Subject_42	14	M	1	100	Complete	17	1	8:30 PM	31.6	0
+MCT.f.0439	Subject_43	14	M	2	94.2	Complete	15	1	9:15 AM	26	-2.8
+MCT.f.0456	Subject_27	14	F	2	90	Complete	11	1	8:00 AM	27.3	-0.1
+MCT.f.0473	Subject_28	14	F	1	84.7	No blood draw	10	1	10:17 AM	18.9	NA
+MCT.f.0524	Subject_31	14	F	2	84.9	Complete	11	1	10:45 AM	22.1	-0.3
+MCT.f.0541	Subject_44	14	M	2	86.7	Complete	12	1	9:14 AM	25.3	-0.4
+MCT.f.0558	Subject_45	14	M	1	84.6	Complete	12	1	NA	23.4	-0.6
+MCT.f.0575	Subject_32	14	F	2	85.5	No blood draw	9	1	NA	20.7	NA
+MCT.f.0592	Subject_33	14	F	2	84.5	Complete	12	1	9:45 AM	24.2	1
+MCT.f.0609	Subject_46	14	M	2	100.4	Complete	11	1	6:50 AM	27.8	0.2
+MCT.f.0049	Subject_34	15	M	1	104	Complete	18	1	2:58 PM	26.6	2.9
+MCT.f.0066	Subject_13	15	F	1	78	Complete	12	1	NA	18.9	0.6
+MCT.f.0083	Subject_14	15	F	2	85.5	Complete	10	1	9:30 AM	19.9	-0.6
+MCT.f.0117	Subject_36	15	M	1	95.5	Complete	18	1	4:40 PM	27.4	-3.2
+MCT.f.0134	Subject_37	15	M	1	81	Complete	18	1	6:45 AM	18.8	-0.6
+MCT.f.0185	Subject_38	15	M	2	84	Complete	13	1	12:30 PM	22.1	-2.3
+MCT.f.0202	Subject_17	15	F	1	79	Complete	12	1	11:15 AM	21.1	-1.4
+MCT.f.0219	Subject_18	15	F	2	78.5	Complete	11	1	12:35 PM	21.7	0.1
+MCT.f.0304	Subject_40	15	M	1	75	Complete	16	1	10:00 AM	22.1	0.4
+MCT.f.0321	Subject_22	15	F	1	87	Complete	12	1	1:50 PM	22.9	0.7
+MCT.f.0338	Subject_23	15	F	2	91	Complete	11	1	10:00 AM	23.3	-0.7
+MCT.f.0355	Subject_24	15	F	1	79	Complete	10	1	7:00 AM	20.6	-0.1
+MCT.f.0406	Subject_26	15	F	2	79.5	Complete	11	1	8:40 PM	22.2	-1.4
+MCT.f.0423	Subject_42	15	M	1	100	Complete	17	1	9:45 AM	31.6	0
+MCT.f.0440	Subject_43	15	M	2	94.2	Complete	15	1	1:15 PM	26	-2.8
+MCT.f.0457	Subject_27	15	F	2	90	Complete	11	1	2:00 PM	27.3	-0.1
+MCT.f.0525	Subject_31	15	F	2	84.9	Complete	11	1	10:00 AM	22.1	-0.3
+MCT.f.0559	Subject_45	15	M	1	84.6	Complete	12	1	NA	23.4	-0.6
+MCT.f.0593	Subject_33	15	F	2	84.5	Complete	12	1	5:00 PM	24.2	1
+MCT.f.0610	Subject_46	15	M	2	100.4	Complete	11	1	7:00 AM	27.8	0.2
+MCT.f.0627	Subject_47	15	M	1	97.5	Complete	14	1	8:15 PM	27.3	-1.3
+MCT.f.0016	Subject_11	16	F	2	NA	Complete	12	1	9:05 AM	25	-0.4
+MCT.f.0067	Subject_13	16	F	1	78	Complete	12	1	8:15 AM	18.9	0.6
+MCT.f.0118	Subject_36	16	M	1	95.5	Complete	18	1	5:30 PM	27.4	-3.2
+MCT.f.0135	Subject_37	16	M	1	81	Complete	18	1	8:04 AM	18.8	-0.6
+MCT.f.0152	Subject_15	16	F	1	85	Complete	14	1	9:30 AM	23.8	0.4
+MCT.f.0169	Subject_16	16	F	1	NA	Complete	13	1	6:22 AM	23	1.2
+MCT.f.0186	Subject_38	16	M	2	84	Complete	13	1	10:50 AM	22.1	-2.3
+MCT.f.0203	Subject_17	16	F	1	79	Complete	12	1	11:30 AM	21.1	-1.4
+MCT.f.0220	Subject_18	16	F	2	78.5	Complete	11	1	9:00 PM	21.7	0.1
+MCT.f.0254	Subject_19	16	F	1	79	Complete	10	1	8:15 AM	18.7	-1.2
+MCT.f.0271	Subject_20	16	F	2	76	Complete	13	1	9:00 AM	17	-0.1
+MCT.f.0305	Subject_40	16	M	1	75	Complete	16	1	9:45 AM	22.1	0.4
+MCT.f.0322	Subject_22	16	F	1	87	Complete	12	1	7:45 PM	22.9	0.7
+MCT.f.0356	Subject_24	16	F	1	79	Complete	10	1	5:00 PM	20.6	-0.1
+MCT.f.0390	Subject_41	16	M	2	96	Complete	14	1	9:00 AM	22.3	-2.6
+MCT.f.0424	Subject_42	16	M	1	100	Complete	17	1	10:00 AM	31.6	0
+MCT.f.0441	Subject_43	16	M	2	94.2	Complete	15	1	7::15 AM	26	-2.8
+MCT.f.0458	Subject_27	16	F	2	90	Complete	11	1	12:30 PM	27.3	-0.1
+MCT.f.0492	Subject_29	16	F	2	96	Complete	11	1	NA	26.2	-1.1
+MCT.f.0543	Subject_44	16	M	2	86.7	Complete	12	1	9:08 AM	25.3	-0.4
+MCT.f.0560	Subject_45	16	M	1	84.6	Complete	12	1	NA	23.4	-0.6
+MCT.f.0611	Subject_46	16	M	2	100.4	Complete	11	1	6:00 AM	27.8	0.2
+MCT.f.0628	Subject_47	16	M	1	97.5	Complete	14	1	7:30 PM	27.3	-1.3
+MCT.f.0051	Subject_34	17	M	1	104	Complete	18	1	3:20 PM	26.6	2.9
+MCT.f.0068	Subject_13	17	F	1	78	Complete	12	1	NA	18.9	0.6
+MCT.f.0119	Subject_36	17	M	1	95.5	Complete	18	1	11:30 AM	27.4	-3.2
+MCT.f.0153	Subject_15	17	F	1	85	Complete	14	1	10:45 AM	23.8	0.4
+MCT.f.0204	Subject_17	17	F	1	79	Complete	12	1	11:30 AM	21.1	-1.4
+MCT.f.0255	Subject_19	17	F	1	79	Complete	10	1	8:50 AM	18.7	-1.2
+MCT.f.0306	Subject_40	17	M	1	75	Complete	16	1	9:30 AM	22.1	0.4
+MCT.f.0323	Subject_22	17	F	1	87	Complete	12	1	5:55 PM	22.9	0.7
+MCT.f.0340	Subject_23	17	F	2	91	Complete	11	1	12:30 PM	23.3	-0.7
+MCT.f.0357	Subject_24	17	F	1	79	Complete	10	1	4:00 PM	20.6	-0.1
+MCT.f.0374	Subject_25	17	F	1	76.5	Complete	10	1	8:00 PM	18.3	1.6
+MCT.f.0391	Subject_41	17	M	2	96	Complete	14	1	12:15 PM	22.3	-2.6
+MCT.f.0408	Subject_26	17	F	2	79.5	Complete	11	1	9:30 AM	22.2	-1.4
+MCT.f.0425	Subject_42	17	M	1	100	Complete	17	1	2:00 PM	31.6	0
+MCT.f.0442	Subject_43	17	M	2	94.2	Complete	15	1	5:45 PM	26	-2.8
+MCT.f.0459	Subject_27	17	F	2	90	Complete	11	1	9:00 AM	27.3	-0.1
+MCT.f.0476	Subject_28	17	F	1	84.7	No blood draw	10	1	7:40 AM	18.9	NA
+MCT.f.0544	Subject_44	17	M	2	86.7	Complete	12	1	9:30 AM	25.3	-0.4
+MCT.f.0578	Subject_32	17	F	2	85.5	No blood draw	9	1	NA	20.7	NA
+MCT.f.0595	Subject_33	17	F	2	84.5	Complete	12	1	5:15 AM	24.2	1
