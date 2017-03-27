@@ -100,10 +100,11 @@ In this tutorial we will take first steps at analyzing the MCT study data.
 
 9. Make taxonomy stacked bar plots
  
- Now run the command `summarize_taxa_through_plots.py`:
+ Filter even more taxa out; otherwise this will take forever. Run the command `summarize_taxa_through_plots.py`:
 
  ```bash
-    summarize_taxa_through_plots.py -i otutable_n50000_s10_subset_sortDayUser.biom -p parameters.txt -o taxaplots
+    filter_otus_from_otu_table.py -i otutable_n50000_s10_subset_sortDayUser.biom -o otutable_n50000_s10_subset_sortDayUser_s200.biom -s 200
+    summarize_taxa_through_plots.py -i otutable_n50000_s10_subset_sortDayUser_s200.biom -p parameters.txt -o taxaplots
  ```
  **Note:** if you get an error from any QIIME script saying that the output directory already exists, then you can usually rerun the command with ` -f` at the end to force it to overwrite the existing directory. If that doesn't work, then remove the offending directory with `rm -rf <name of the directory>`.
 
