@@ -62,8 +62,8 @@ In this tutorial we will take first steps at analyzing the MCT study data.
  There is already an OTU table provided. Examine the OTU table using `biom summarize-table`:
 
  ```bash
-    biom summarize_table -i otus/otutable_n50000_s10_subset.biom -o stats.txt
-    head -n 30 otus/stats.txt
+    biom summarize_table -i otutable.biom -o stats.txt
+    head -n 30 stats.txt
  ```
  
  From this summary you should be able to answer these questions:
