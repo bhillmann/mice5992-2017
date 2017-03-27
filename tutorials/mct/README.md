@@ -123,7 +123,7 @@ In this tutorial we will take first steps at analyzing the MCT study data.
 12. Add vectors to the 3d plot
 
  ```bash
-    make_emperor.py -i beta/bray_curtis_pc.txt -a "StudyDayNo" --add-vectors "UserName,StudyDayNo" -o beta_vectors -m map.txt
+    make_emperor.py -i beta/bray_curtis_pc.txt -a "StudyDayNo" --add_vectors "UserName,StudyDayNo" -o beta_vectors -m map.txt
  ```
 
 13. Move the files back from MSI to your computer using Filezilla  
