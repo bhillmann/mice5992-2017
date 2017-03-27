@@ -129,3 +129,19 @@ In this tutorial we will take first steps at analyzing the MCT study data.
 13. Move the files back from MSI to your computer using Filezilla  
  See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/<yourusername>/mice5992-2017/tutorials/corediv/`. Drag the `betaplots`, `taxaplots`, and `alphaplots` folders to your computer.
  
+ 
+14. Hypotheses of interest
+ - MCTs
+   - Was there a change in alpha diversity following MCT
+   - Was there a change in overall microbiome following MCT (did one supplement cause people's microbiome to change more)
+   - Was there a change in any taxa following MCT
+   - Was there a change in any blood markers following MCT
+   - Do post-treatment microbiomes cluster by treatment
+ - Diet-microbiome associations
+   - Do samples cluster by individual 
+   - Are the soylent subjects different? 
+   - Are the soylent subjects more stable?
+   - Does the microbiome cluster by Whole foods vs. processed foods?
+   - Are any whole foods associated with any microbial taxa?
+   - Are any whole foods associated with MB diversity? 
+   - Does food clustering correlate with MB clustering?
