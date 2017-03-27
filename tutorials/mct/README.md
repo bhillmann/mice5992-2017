@@ -58,7 +58,7 @@ In this tutorial we will take first steps at analyzing the MCT study data.
  ```
 
 ### Analysis
-4. Examine the OTU table
+5. Examine the OTU table
  There is already an OTU table provided. Examine the OTU table using `biom summarize-table`:
 
  ```bash
@@ -81,24 +81,24 @@ In this tutorial we will take first steps at analyzing the MCT study data.
  ```
  What is the highest-depth blank? At what minimum depth should we trust samples?
 
-5. Drop samples with < 50,000 sequences, Drop rare OTUs
+6. Drop samples with < 50,000 sequences, Drop rare OTUs
  ```bash
     filter_samples_from_otu_table.py -n 50000 -i otutable.biom -o otutable_n50000.biom
     filter_otus_from_otu_table.py -s 10 -i otutable_n50000.biom -o otutable_n50000_s10.biom
  ```
 
-5. Drop samples not present in the mapping file
+7. Drop samples not present in the mapping file
  ```bash
     filter_samples_from_otu_table.py -i otutable_n50000_s10.biom -o otutable_n50000_s10_subset.biom --sample_id_fp map.txt
  ```
 
-5. Sort the OTU table. This makes for nicer taxonomy bar charts.
+8. Sort the OTU table. This makes for nicer taxonomy bar charts.
  ```bash
     sort_otu_table.py -i otutable_n50000_s10_subset.biom -m map.txt -s StudyDayNo -o otutable_n50000_s10_subset_sortDay.biom
     sort_otu_table.py -i otutable_n50000_s10_subset_sortDay.biom -m map.txt -s UserName -o otutable_n50000_s10_subset_sortDayUser.biom
  ```
 
-5. Make taxonomy stacked bar plots
+9. Make taxonomy stacked bar plots
  
  Now run the command `summarize_taxa_through_plots.py`:
 
@@ -107,24 +107,24 @@ In this tutorial we will take first steps at analyzing the MCT study data.
  ```
  **Note:** if you get an error from any QIIME script saying that the output directory already exists, then you can usually rerun the command with ` -f` at the end to force it to overwrite the existing directory. If that doesn't work, then remove the offending directory with `rm -rf <name of the directory>`.
 
-6. Make beta diversity plots
+10. Make beta diversity plots
 
  ```bash
     beta_diversity_through_plots.py -i otutable_n50000_s10_subset_sortDayUser.biom -o beta -p parameters.txt -m map.txt -v 
  ```
 
-6. Make beta diversity plots with a custom axis for StudyDayNo
+11. Make beta diversity plots with a custom axis for StudyDayNo
 
  ```bash
     make_emperor.py -i beta/bray_curtis_pc.txt -a "StudyDayNo" -o beta_custom_axis -m map.txt
  ```
 
-7. Add vectors to the 3d plot
+12. Add vectors to the 3d plot
 
  ```bash
     make_emperor.py -i beta/bray_curtis_pc.txt -a "StudyDayNo" --add-vectors "UserName,StudyDayNo" -o beta_vectors -m map.txt
  ```
 
-8. Move the files back from MSI to your computer using Filezilla  
+13. Move the files back from MSI to your computer using Filezilla  
  See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/<yourusername>/mice5992-2017/tutorials/corediv/`. Drag the `betaplots`, `taxaplots`, and `alphaplots` folders to your computer.
  
