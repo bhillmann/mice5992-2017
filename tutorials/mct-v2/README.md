@@ -98,6 +98,16 @@ In this tutorial we will learn how to filter and collapse tables for custom anal
 
  ```
 
+8. Collapse by subject _and_ treatment (for paired testing)
+ ```bash
+    # use QIIME to collapse the filtered OTU table and the pre/post filtered otu tables
+    collapse_samples.py -b otutable-subset-n50000-s10.biom -m map-subset.txt --output_mapping_fp map-subset-collapse-UserName.txt --output_biom_fp otutable-subset-n50000-s10-collapse-UserNameTreatment.biom --collapse_mode sum --collapse_fields "UserName,Treatment" 
+    
+    # Use custom R script to collapse the full mapping files by subject. QIIME doesn't do this well so we use R.
+    Rscript collapse_map.r map-subset.txt "UserName,Treatment"  map-subset-collapse-UserNameTreatment.txt
+ ```
+
+
 8. Continue with downstream analysis (taxonomy, beta diversity, etc.) using these files:
  - Longitudinal data
    - Full study
@@ -119,6 +129,10 @@ In this tutorial we will learn how to filter and collapse tables for custom anal
    - Post-treatment samples
      - Mapping file: `map-subset-post.txt`
      - OTU table: `otutable-subset-n50000-s10-post-collapse-UserName.biom`
+ - Collapsed by Subject _and_ Treatment
+   - Full study
+     - Mapping file: `map-subset-collapse-UserNameTreatment.txt`
+     - OTU table: `otutable-subset-n50000-s10-collapse-UserNameTreatment.biom`
  - Raw data
     - Mapping file: `new_map_with_treatment.txt`
     - Full OTU table: `otutable.biom`
