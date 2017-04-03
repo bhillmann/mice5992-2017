@@ -57,7 +57,7 @@ In this tutorial we will learn how to filter and collapse tables for custom anal
  ```
 
 ### Analysis
-5. Remove samples with outlier dietary information.
+5. Remove samples with outlier dietary information and subjects, 12, 21, 30 (too few samples)
  The file sample_ids_to_exclude.txt is just a text file with the names of samples to exclude. Print the contents:
 
  ```bash
