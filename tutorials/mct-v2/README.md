@@ -1,7 +1,7 @@
 ## MiCE 5992 Tutorial: MCT study
 
 ### Background
-In this tutorial we will take first steps at analyzing the MCT study data.
+In this tutorial we will learn how to filter and collapse tables for custom analysis.
 
 ### Setup
 1. Connect to MSI  
@@ -16,7 +16,6 @@ In this tutorial we will take first steps at analyzing the MCT study data.
  Load all of the software "modules" that you will need.
  ```bash
     module load qiime/1.9.1
-    module load bowtie2
  ```
 
 3. Go to the tutorial directory
@@ -44,7 +43,7 @@ In this tutorial we will take first steps at analyzing the MCT study data.
  Then change directories into the new tutorial folder:
  ```bash
     cd tutorials
-    cd mct
+    cd mct-v2
  ```
 
  List the contents of the directory:
@@ -58,90 +57,65 @@ In this tutorial we will take first steps at analyzing the MCT study data.
  ```
 
 ### Analysis
-5. Examine the OTU table
- There is already an OTU table provided. Examine the OTU table using `biom summarize-table`:
+5. Remove samples with outlier dietary information.
+ The file sample_ids_to_exclude.txt is just a text file with the names of samples to exclude. Print the contents:
 
  ```bash
-    biom summarize_table -i otutable.biom -o stats.txt
-    head -n 30 stats.txt
+    cat sample_ids_to_exclude.txt
  ```
  
- From this summary you should be able to answer these questions:
-  - How many taxonomic groups are there?
-  - How many samples?
-  - How many sequences matched the database in the lowest coverage sample?
-
- To view more of this file, you can scroll up and down inside it with `less otus/stats.txt`.
- However, you will need to quit `less` by typing `q` before you do anything else.
-
- We notice that some "Blank" samples have a lot of sequences in them. We can list all lines of the file containing the word `Blank` with this command:
+ Now remove those samples with `filter_samples_from_otu_table.py`:
 
  ```bash
-    grep "Blank" stats.txt
+    filter_samples_from_otu_table.py -i otutable.biom -o otutable-subset.biom --sample_id_fp sample_ids_to_exclude.txt --negate_sample_id_fp -m new_map_with_treatment.txt --output_mapping_fp map-subset.txt
  ```
- What is the highest-depth blank? At what minimum depth should we trust samples?
 
-6. Drop samples with < 50,000 sequences, Drop rare OTUs
+6.  For microbiome analysis, Drop samples with < 50,000 sequences, Drop rare OTUs, subsetting by pre/post
  ```bash
-    filter_samples_from_otu_table.py -n 50000 -i otutable.biom -o otutable_n50000.biom
-    filter_otus_from_otu_table.py -s 10 -i otutable_n50000.biom -o otutable_n50000_s10.biom
+    filter_samples_from_otu_table.py -n 50000 -i otutable-subset.biom -o otutable-subset-n50000.biom
+    filter_otus_from_otu_table.py -s 10 -i otutable-subset-n50000.biom -o otutable-n50000-s10.biom
+
+    # Subsetting pre/post using QIIME
+    filter_samples_from_otu_table.py -i otutable-subset-n50000-s10.biom -o otutable-subset-n50000-s10-pre.biom -m map-subset.txt --output_mapping_fp map-subset-pre.txt -s "Treatment:Pre"
+    filter_samples_from_otu_table.py -i otutable-subset-n50000-s10.biom -o otutable-subset-n50000-s10-post.biom -m map-subset.txt --output_mapping_fp map-subset-post.txt -s "Treatment:Post"
  ```
 
-7. Drop samples not present in the mapping file
+7. Collapse by subject
  ```bash
-    filter_samples_from_otu_table.py -i otutable_n50000_s10.biom -o otutable_n50000_s10_subset.biom --sample_id_fp map.txt
+    # use QIIME to collapse the filtered OTU table and the pre/post filtered otu tables
+    collapse_samples.py -b otutable-subset-n50000-s10.biom -m map-subset.txt --output_biom_fp otutable-subset-n50000-s10-collapse-UserName.biom --collapse_mode sum --collapse_fields UserName
+    
+    # Same for "Pre" samples
+    collapse_samples.py -b otutable-subset-n50000-s10-pre.biom -m map-subset-pre.txt --output_biom_fp otutable-subset-n50000-s10-pre-collapse-UserName.biom --collapse_mode sum --collapse_fields UserName
+
+    # Same for "Post" samples
+    collapse_samples.py -b otutable-subset-n50000-s10-post.biom -m map-subset-post.txt --output_biom_fp otutable-subset-n50000-s10-post-collapse-UserName.biom --collapse_mode sum --collapse_fields UserName
+
+    # Use custom R script to collapse the mapping file. QIIME doesn't do this well so we use R.
+    Rscript collapse_map.r map-subset.txt UserName map-subset-collapse-UserName.txt
+    Rscript collapse_map.r map-subset-pre.txt UserName map-subset-pre-collapse-UserName.txt
+    Rscript collapse_map.r map-subset-post.txt UserName map-subset-post-collapse-UserName.txt
+
  ```
 
-8. Sort the OTU table. This makes for nicer taxonomy bar charts.
- ```bash
-    sort_otu_table.py -i otutable_n50000_s10_subset.biom -m map.txt -s StudyDayNo -o otutable_n50000_s10_subset_sortDay.biom
-    sort_otu_table.py -i otutable_n50000_s10_subset_sortDay.biom -m map.txt -s UserName -o otutable_n50000_s10_subset_sortDayUser.biom
- ```
-
-9. Make taxonomy stacked bar plots
- 
- Filter even more taxa out; otherwise this will take forever. Run the command `summarize_taxa_through_plots.py`:
-
- ```bash
-    filter_otus_from_otu_table.py -i otutable_n50000_s10_subset_sortDayUser.biom -o otutable_n50000_s10_subset_sortDayUser_s200.biom -s 200
-    summarize_taxa_through_plots.py -i otutable_n50000_s10_subset_sortDayUser_s200.biom -p parameters.txt -o taxaplots
- ```
- **Note:** if you get an error from any QIIME script saying that the output directory already exists, then you can usually rerun the command with ` -f` at the end to force it to overwrite the existing directory. If that doesn't work, then remove the offending directory with `rm -rf <name of the directory>`.
-
-10. Make beta diversity plots
-
- ```bash
-    beta_diversity_through_plots.py -i otutable_n50000_s10_subset_sortDayUser.biom -o beta -p parameters.txt -m map.txt -v 
- ```
-
-11. Make beta diversity plots with a custom axis for StudyDayNo
+8. Collapse the full mapping file by subject. Also collapse "Pre" and "Post" samples separately. This is for people who want to do analyses that don't include the microbiome (and hence don't need to drop the low-count microbiome samples). 
 
  ```bash
-    make_emperor.py -i beta/bray_curtis_pc.txt -a "StudyDayNo" -o beta_custom_axis -m map.txt
+    # use R to collapse the mapping file
+    Rscript collapse_map.r map-subset.txt UserName map-subset-collapse-UserName.txt
+
+    # Same for "Pre" samples
+    Rscript collapse_map.r map-subset-pre.txt UserName map-subset-pre-collapse-UserName.txt
+
+    # Same for "Post" samples
+    Rscript collapse_map.r map-subset-post.txt UserName map-subset-post-collapse-UserName.txt
+
  ```
 
-12. Add vectors to the 3d plot
 
- ```bash
-    make_emperor.py -i beta/bray_curtis_pc.txt -a "StudyDayNo" --add_vectors "UserName,StudyDayNo" -o beta_vectors -m map.txt
- ```
+8. Continue with downstream analysis (taxonomy, beta diversity, etc.)
 
-13. Move the files back from MSI to your computer using Filezilla  
+9. Move the files back from MSI to your computer using Filezilla  
  See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/<yourusername>/mice5992-2017/tutorials/corediv/`. Drag the `betaplots`, `taxaplots`, and `alphaplots` folders to your computer.
  
  
-14. Hypotheses of interest
- - MCTs
-   - Was there a change in alpha diversity following MCT
-   - Was there a change in overall microbiome following MCT (did one supplement cause people's microbiome to change more)
-   - Was there a change in any taxa following MCT
-   - Was there a change in any blood markers following MCT
-   - Do post-treatment microbiomes cluster by treatment
- - Diet-microbiome associations
-   - Do samples cluster by individual 
-   - Are the soylent subjects different? 
-   - Are the soylent subjects more stable?
-   - Does the microbiome cluster by Whole foods vs. processed foods?
-   - Are any whole foods associated with any microbial taxa?
-   - Are any whole foods associated with MB diversity? 
-   - Does food clustering correlate with MB clustering?
