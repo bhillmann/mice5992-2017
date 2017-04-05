@@ -114,7 +114,14 @@ In this tutorial we will learn how to filter and collapse tables for custom anal
     filter_samples_from_otu_table.py -i otutable-subset-n50000-s10.biom -o otutable-subset-n50000-s10-no-transition.biom -m map-subset.txt --output_mapping_fp map-subset-no-transition.txt -s 'StudyDayNo:*,!Day.09,!Day.10,!Day.11'
  ```
 
-10. Continue with downstream analysis (taxonomy, beta diversity, etc.) using these files:
+
+10. Summarize whole-food tables at different food levels
+
+ ```bash
+    summarize_taxa.py -i foodtable_for_taxonomy-subset.biom -o foodtaxa -L 1,2,3
+ ```
+
+11. Continue with downstream analysis (taxonomy, beta diversity, etc.) using these files:
  - Longitudinal data
    - Full study
      - Mapping file: `map-subset.txt`
@@ -145,7 +152,5 @@ In this tutorial we will learn how to filter and collapse tables for custom anal
     - Mapping file excluding samples with outlier diet: `map-subset.biom`
     - OTU table excluding samples with outlier diet: `otutable-subset.biom`
 
-9. Move the files back from MSI to your computer using Filezilla  
- See instructions on [Getting Started Guide](../../README.md) to connect to MSI using Filezilla. Navigate to `/home/mice5992/<yourusername>/mice5992-2017/tutorials/corediv/`. Drag the `betaplots`, `taxaplots`, and `alphaplots` folders to your computer.
  
  
