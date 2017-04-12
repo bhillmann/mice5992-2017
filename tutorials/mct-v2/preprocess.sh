@@ -48,6 +48,5 @@ collapse_samples.py -b nutrients-norm-subset-no-soylent-no-transition-post.biom 
 Rscript collapse_map.r map-subset-no-soylent-no-transition-pre.txt UserName map-subset-no-soylent-no-transition-pre-collapse-UserName.txt
 Rscript collapse_map.r map-subset-no-soylent-no-transition-post.txt UserName map-subset-no-soylent-no-transition-post-collapse-UserName.txt
 
-summarize_taxa.py -i otutable-subset-n50000-s10-norm-no-soylent-collapse-UserName.biom -L '2,6,7' -o taxa
-summarize_taxa.py -i otutable-subset-n50000-s10-norm-no-soylent.biom -L '2,6,7' -o taxa
+# summarize taxa for all tables
 for f in otutable-subset-n50000-s10-norm*; do echo ; summarize_taxa.py -i  -o taxa; done
