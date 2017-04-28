@@ -1,5 +1,5 @@
 # Constructed from biom file
-#OTU ID	Subject_41	Subject_40	Subject_43	Subject_42	Subject_45	Subject_44	Subject_47	Subject_46	Subject_39	Subject_31	Subject_32	Subject_33	Subject_34	Subject_35	Subject_36	Subject_37	Subject_16	Subject_14	Subject_15	Subject_13	Subject_11	Subject_18	Subject_19	Subject_29	Subject_28	Subject_27	Subject_26	Subject_25	Subject_24	Subject_23	Subject_22	Subject_20
+#OTU ID	Subject_41	Subject_40	Subject_43	Subject_42	Subject_45	Subject_44	Subject_47	Subject_46	Subject_39	Subject_31	Subject_32	Subject_33	Subject_34	Subject_35	Subject_36	Subject_37	Subject_16	Subject_14	Subject_15	Subject_13	Subject_11	Subject_18	Subject_19	Subject_29	Subject_28	Subject_27	Subject_26	Subject_25	Subject_24	Subject_23	Subject_22	Subject_20	taxonomy
 Milk NFS	0.0	0.0	0.0	0.0	0.0	0.0	0.0	2.17857142857	0.0	97.6	24.4	0.0	0.0	0.0	0.0	0.0	0.0	231.8	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	30.5
 Milk whole	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	268.4	0.0	122.0	0.0	292.8	0.0	0.0	0.0	0.0	0.0	0.0	0.0	122.0	0.0	0.0	101.666666667	0.0	0.0	0.0	0.0	0.0
 Milk reduced fat 2	0.0	0.0	0.0	0.0	0.0	0.0	10.1666666667	0.0	0.0	0.0	12.2	0.0	0.0	0.0	0.0	0.0	209.433333333	0.0	0.0	0.0	0.0	0.0	56.9333333333	0.0	0.0	57.95	0.0	90.0333333333	0.0	0.0	0.0	0.0
